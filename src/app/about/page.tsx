@@ -118,11 +118,11 @@ export default function AboutPage() {
               </h3>
               <div className="space-y-4 text-gray-300">
                 <p>
-                  I specialize in DaVinci Resolve, Premiere Pro, and After
-                  Effects — delivering cinematic edits, clean motion graphics,
-                  and polished visual storytelling. From smooth transitions to
-                  precise audio syncing and dynamic animations — I focus on
-                  making your content not just polished, but powerful.
+                  I specialize Premiere Pro, and After Effects — delivering
+                  cinematic edits, clean motion graphics, and polished visual
+                  storytelling. From smooth transitions to precise audio syncing
+                  and dynamic animations — I focus on making your content not
+                  just polished, but powerful.
                 </p>
                 <p>
                   If you're looking for someone who blends creativity with
