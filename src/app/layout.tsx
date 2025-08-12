@@ -14,13 +14,13 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "Niloy Bhowmick – Video Editor & Motion Graphics Designer",
-    template: "%s | Niloy Bhowmick",
+    default: "Naimur Rahman – Video Editor & Motion Graphics Designer",
+    template: "%s | Naimur Rahman",
   },
   description:
     "Turning raw footage into visual stories — with style, precision, and a touch of cinematic magic. Niloy Bhowmick specializes in DaVinci Resolve, Premiere Pro, and After Effects — delivering cinematic edits, motion graphics, and polished storytelling.",
   keywords: [
-    "Niloy Bhowmick",
+    "Naimur Rahman",
     "Video Editor",
     "Motion Graphics Designer",
     "DaVinci Resolve",
