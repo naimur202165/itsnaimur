@@ -23,7 +23,7 @@ export const EmailTemplate = ({
   message,
   projectType = "Not specified",
   timeline = "Not specified",
-  yourName = "Niloy Bhowmick",
+  yourName = "Naimur Rahman",
 }: EmailTemplateProps) => (
   <Html>
     <Head />
