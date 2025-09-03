@@ -1,26 +1,26 @@
-import type React from "react";
 import type { Metadata } from "next";
-import { Inter, Nunito } from "next/font/google";
+import { Inter } from "next/font/google";
+import type React from "react";
 
-import "./globals.css";
-import Navbar from "@/components/navbar";
-import MouseMoveEffect from "@/components/mouse-move-effect";
-import JumpToTop from "@/components/jump-to-top";
 import Footer from "@/components/footer";
+import JumpToTop from "@/components/jump-to-top";
+import MouseMoveEffect from "@/components/mouse-move-effect";
+import Navbar from "@/components/navbar";
 import { Toaster } from "@/components/ui/sonner";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 // const nunito = Nunito({ subsets: ["latin"] });q
 
 export const metadata: Metadata = {
   title: {
-    default: "Niloy Bhowmick – Video Editor & Motion Graphics Designer",
-    template: "%s | Niloy Bhowmick",
+    default: "Naimur Rahman – Video Editor & Motion Graphics Designer",
+    template: "%s | Naimur Rahman",
   },
   description:
-    "Turning raw footage into visual stories — with style, precision, and a touch of cinematic magic. Niloy Bhowmick specializes in DaVinci Resolve, Premiere Pro, and After Effects — delivering cinematic edits, motion graphics, and polished storytelling.",
+    "Turning raw footage into visual stories — with style, precision, and a touch of cinematic magic. Naimur Rahman specializes in DaVinci Resolve, Premiere Pro, and After Effects — delivering cinematic edits, motion graphics, and polished storytelling.",
   keywords: [
-    "Niloy Bhowmick",
+    "Naimur Rahman",
     "Video Editor",
     "Motion Graphics Designer",
     "DaVinci Resolve",
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
     "Lower Thirds",
     "Audio Sync",
   ],
-  authors: [{ name: "Niloy Bhowmick", url: "https://www.itsniloy.me" }],
-  creator: "Niloy Bhowmick",
-  publisher: "Niloy Bhowmick",
+  authors: [{ name: "Naimur Rahman", url: "https://www.itsnaimur.me" }],
+  creator: "Naimur Rahman",
+  publisher: "Naimur Rahman",
   robots: {
     index: true,
     follow: true,
@@ -55,33 +55,33 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.itsniloy.me",
-    title: "Niloy Bhowmick – Video Editor & Motion Graphics Designer",
+    url: "https://www.itsnaimur.me",
+    title: "Naimur Rahman – Video Editor & Motion Graphics Designer",
     description:
       "Passionate Video Editor and Motion Graphics Designer delivering clean, cinematic edits and dynamic visual storytelling using DaVinci Resolve, Premiere Pro, and After Effects.",
-    siteName: "Niloy Bhowmick Portfolio",
+    siteName: "Naimur Rahman Portfolio",
     images: [
       {
-        url: "/niloybhowmick.png",
+        url: "/naimur.png",
         width: 1200,
         height: 630,
-        alt: "Niloy Bhowmick - Video Editor",
+        alt: "Naimur Rahman - Video Editor",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Niloy Bhowmick – Video Editor & Motion Graphics Designer",
+    title: "Naimur Rahman – Video Editor & Motion Graphics Designer",
     description:
       "Crafting cinematic edits, motion graphics, and powerful stories. Let's make your content stand out.",
-    creator: "@niloy_bhowmick", // update if you have a real Twitter handle
-    images: ["/niloybhowmick.png"],
+    creator: "@naimur_rahman", // update if you have a real Twitter handle
+    images: ["/naimur.png"],
   },
   verification: {
     google: "your-google-verification-code",
   },
   alternates: {
-    canonical: "https://www.itsniloy.me",
+    canonical: "https://www.itsnaimur.me",
   },
   category: "Video Editing",
 };
@@ -103,14 +103,14 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
-              name: "Niloy Bhowmick",
-              url: "https://www.itsniloy.me",
-              image: "/niloybhowmick.png",
+              name: "Naimur Rahman",
+              url: "https://www.itsnaimur.me",
+              image: "/naimur.png",
               sameAs: [
-                "https://www.itsniloy.me",
-                "https://linkedin.com/in/niloybhowmick", // update if available
-                "https://youtube.com/@niloybhowmick", // update if available
-                "https://twitter.com/niloy_bhowmick", // update if available
+                "https://www.itsnaimur.me",
+                "https://www.linkedin.com/in/naimur202164/", // update if available
+                "https://youtube.com/@naimurrahman", // update if available
+                "https://twitter.com/naimur_rahman", // update if available
               ],
               jobTitle: "Video Editor & Motion Graphics Designer",
               knowsAbout: [

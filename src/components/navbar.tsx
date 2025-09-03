@@ -1,10 +1,10 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { motion } from "framer-motion";
-import { Menu, X, Play } from "lucide-react";
+import { useEffect, useState } from "react";
 import { Clapperboard } from "./ui/Clapperboard";
 
 const navItems = [
@@ -44,7 +44,7 @@ export default function Navbar() {
             <div className="w-7 h-7 rounded-lg flex items-center justify-center">
               <Clapperboard />
             </div>
-            <span className="text-xl font-bold text-white">itsNiloy</span>
+            <span className="text-xl font-bold text-white">itsNaimur</span>
           </Link>
 
           {/* Desktop Navigation */}

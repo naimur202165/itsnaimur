@@ -1,14 +1,14 @@
 "use client";
 
-import Link from "next/link";
 import {
-  Linkedin,
-  Twitter,
-  Youtube,
-  Mail,
   Heart,
   Instagram,
+  Linkedin,
+  Mail,
+  Twitter,
+  Youtube,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -16,17 +16,17 @@ export default function Footer() {
   const socialLinks = [
     {
       name: "YouTube",
-      href: "https://www.youtube.com/@itsniloybhowmick",
+      href: "https://www.youtube.com/@itsnaimurrahman",
       icon: Youtube,
     },
     {
       name: "Instagram",
-      href: "https://instagram.com/its.niloybhowmick",
+      href: "https://www.instagram.com/naimur202170/",
       icon: Instagram,
     },
     {
       name: "LinkedIn",
-      href: "https://www.linkedin.com/in/niloy-bhowmick",
+      href: "https://www.linkedin.com/in/naimur202164/",
       icon: Linkedin,
     },
     {
@@ -36,7 +36,7 @@ export default function Footer() {
     },
     {
       name: "Email",
-      href: "mailto:contact.niloybhowmick@gmail.com",
+      href: "mailto:contact.naimur202164@gmail.com",
       icon: Mail,
     },
   ];
@@ -47,7 +47,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold">Niloy Bhowmick</h3>
+            <h3 className="text-xl font-bold">Naimur Rahman</h3>
             <p className="text-gray-400 text-sm">
               Video Editor and Motion Graphics Designer passionate about
               creating visual stories with style, precision, and cinematic
@@ -113,11 +113,11 @@ export default function Footer() {
           <p className="text-gray-400 text-sm flex items-center justify-center gap-1">
             Made with <Heart className="text-red-500" size={16} /> by{" "}
             <a
-              href="https://www.linkedin.com/in/mdmarufsarker/"
+              href="https://www.linkedin.com/in/naimur202164/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Md. Maruf Sarker
+              Naimur Rahman
             </a>{" "}
             © {currentYear}
           </p>
