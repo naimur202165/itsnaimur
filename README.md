@@ -1,10 +1,10 @@
-# Niloy Bhowmick - Video Editor Portfolio
+# Naimur Rahman - Video Editor Portfolio
 
 A modern, responsive video editor portfolio website showcasing professional video editing work, motion graphics, and client projects. Built with Next.js 15 and featuring smooth animations, YouTube integration, and a sleek glassmorphism design.
 
-![Project Overview](./public/demo.png)
 
-🌐 **Live Website**: [https://www.itsniloy.me](https://www.itsniloy.me)
+
+🌐 **Live Website**: 
 
 ## Features
 
@@ -433,3 +433,4 @@ This project is open source and available under the [Apache License](LICENSE).
 ---
 
 Built with ❤️ using Next.js 15, TypeScript, Tailwind CSS, and modern web technologies.
+# itsnaimur

@@ -1,13 +1,13 @@
 "use client";
 
-import { motion } from "framer-motion";
-import Image from "next/image";
-import GlassmorphismCard from "@/components/glassmorphism-card";
-import { Facebook, Github, Instagram, Linkedin, Youtube } from "lucide-react";
-import { getClients } from "@/lib/helper";
 import CTASection from "@/components/CTASection";
+import GlassmorphismCard from "@/components/glassmorphism-card";
 import Marquee from "@/components/ui/marquee";
 import { clientsData } from "@/db/clients";
+import { getClients } from "@/lib/helper";
+import { motion } from "framer-motion";
+import { Facebook, Github, Instagram, Linkedin, Youtube } from "lucide-react";
+import Image from "next/image";
 
 export default function AboutPage() {
   const clients = getClients();
@@ -25,7 +25,7 @@ export default function AboutPage() {
             About Me
           </h1>
           <p className="text-gray-300 text-lg max-w-3xl mx-auto">
-            Hey there! I'm Niloy Bhowmick, a passionate Video Editor and Motion
+            Hey there! I'm Naimur Rahman , a passionate Video Editor and Motion
             Graphics Designer with a deep love for storytelling through visuals.
           </p>
         </motion.div>
@@ -41,8 +41,8 @@ export default function AboutPage() {
               <div className="text-center">
                 <div className="relative w-64 h-64 mx-auto mb-6">
                   <Image
-                    src="/niloybhowmick.png"
-                    alt="Niloy Bhowmick"
+                    src="/naimur.png"
+                    alt="Naimur Rahman"
                     fill
                     className="rounded-full object-cover"
                   />
