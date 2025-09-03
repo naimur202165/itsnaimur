@@ -108,7 +108,7 @@ export default function RootLayout({
               image: "/naimur.png",
               sameAs: [
                 "https://www.itsnaimur.me",
-                "https://www.linkedin.com/in/naimur202164/", // update if available
+                "https://linkedin.com/in/naimurrahman", // update if available
                 "https://youtube.com/@naimurrahman", // update if available
                 "https://twitter.com/naimur_rahman", // update if available
               ],
