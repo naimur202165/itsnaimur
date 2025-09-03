@@ -1,11 +1,11 @@
 import {
-  Html,
-  Head,
   Body,
   Container,
-  Text,
-  Section,
+  Head,
   Hr,
+  Html,
+  Section,
+  Text,
 } from "@react-email/components";
 
 type EmailTemplateProps = {
@@ -23,7 +23,7 @@ export const EmailTemplate = ({
   message,
   projectType = "Not specified",
   timeline = "Not specified",
-  yourName = "Niloy Bhowmick",
+  yourName = "Naimur Rahman",
 }: EmailTemplateProps) => (
   <Html>
     <Head />
@@ -83,7 +83,7 @@ export const EmailTemplate = ({
             system.
           </Text>
           <Text style={footerLink}>
-            <a href="https://www.itsniloy.me" style={footerLinkStyle}>
+            <a href="https://www.itsnaimur.me" style={footerLinkStyle}>
               Visit Your Portfolio
             </a>
           </Text>
