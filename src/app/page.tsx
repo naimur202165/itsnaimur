@@ -1,19 +1,19 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
-import { motion } from "framer-motion";
-import Image from "next/image";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import GlassmorphismCard from "@/components/glassmorphism-card";
 import MouseMoveEffect from "@/components/mouse-move-effect";
-import { Play, Clock, User, ArrowRight, Filter, Loader2 } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import {
-  getVideoProjectsByCategory,
   getVideoCategoriesWithCountIncludingAll,
+  getVideoProjectsByCategory,
 } from "@/lib/helper";
 import type { VideoProject } from "@/types/videos";
+import { motion } from "framer-motion";
+import { ArrowRight, Clock, Loader2, Play, User } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { useCallback, useEffect, useState } from "react";
 
 const categories = getVideoCategoriesWithCountIncludingAll();
 
