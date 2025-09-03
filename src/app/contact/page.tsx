@@ -33,21 +33,25 @@ export default function ContactPage() {
       return;
     }
 
-    const res = await fetch("/api/send-email", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ name, email, message, projectType, timeline }),
-    });
+    try {
+      const res = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ name, email, message, projectType, timeline }),
+      });
 
-    const result = await res.json();
-
-    if (res.ok) {
-      toast("Message sent successfully!");
-      form.reset();
-    } else {
-      toast(result.error || "Something went wrong.");
+      if (res.ok) {
+        toast("Message sent successfully!");
+        form.reset();
+      } else {
+        const errorData = await res.json();
+        const errorMessage = errorData.error || "An unknown error occurred.";
+        toast(errorMessage);
+      }
+    } catch (error) {
+      toast("Failed to send message. Please try again.");
     }
   };
 
