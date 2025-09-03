@@ -1,14 +1,14 @@
 "use client";
 
+import Link from "next/link";
 import {
-  Heart,
-  Instagram,
   Linkedin,
-  Mail,
   Twitter,
   Youtube,
+  Mail,
+  Heart,
+  Instagram,
 } from "lucide-react";
-import Link from "next/link";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -16,17 +16,17 @@ export default function Footer() {
   const socialLinks = [
     {
       name: "YouTube",
-      href: "https://youtube.com/@naimurrahman-b5l?si=87d2x5tf5XrQ6wGD",
+      href: "https://www.youtube.com/@itsniloybhowmick",
       icon: Youtube,
     },
     {
       name: "Instagram",
-      href: "https://instagram.com/naimur202170",
+      href: "https://instagram.com/its.niloybhowmick",
       icon: Instagram,
     },
     {
       name: "LinkedIn",
-      href: "https://www.linkedin.com/in/naimur202164/",
+      href: "https://www.linkedin.com/in/niloy-bhowmick",
       icon: Linkedin,
     },
     {
@@ -36,7 +36,7 @@ export default function Footer() {
     },
     {
       name: "Email",
-      href: "mailto:contact.naimur202164@gmail.com",
+      href: "mailto:contact.niloybhowmick@gmail.com",
       icon: Mail,
     },
   ];
@@ -47,7 +47,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold">Naimur Rahman</h3>
+            <h3 className="text-xl font-bold">Niloy Bhowmick</h3>
             <p className="text-gray-400 text-sm">
               Video Editor and Motion Graphics Designer passionate about
               creating visual stories with style, precision, and cinematic
@@ -113,11 +113,11 @@ export default function Footer() {
           <p className="text-gray-400 text-sm flex items-center justify-center gap-1">
             Made with <Heart className="text-red-500" size={16} /> by{" "}
             <a
-              href="https://www.linkedin.com/in/naimur202164/"
+              href="https://www.linkedin.com/in/mdmarufsarker/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Naimur Rahman
+              Md. Maruf Sarker
             </a>{" "}
             © {currentYear}
           </p>

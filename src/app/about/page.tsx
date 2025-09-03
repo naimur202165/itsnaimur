@@ -1,13 +1,13 @@
 "use client";
 
-import CTASection from "@/components/CTASection";
+import { motion } from "framer-motion";
+import Image from "next/image";
 import GlassmorphismCard from "@/components/glassmorphism-card";
+import { Facebook, Github, Instagram, Linkedin, Youtube } from "lucide-react";
+import { getClients } from "@/lib/helper";
+import CTASection from "@/components/CTASection";
 import Marquee from "@/components/ui/marquee";
 import { clientsData } from "@/db/clients";
-import { getClients } from "@/lib/helper";
-import { motion } from "framer-motion";
-import { Facebook, Github, Instagram, Linkedin, Youtube } from "lucide-react";
-import Image from "next/image";
 
 export default function AboutPage() {
   const clients = getClients();
@@ -25,7 +25,7 @@ export default function AboutPage() {
             About Me
           </h1>
           <p className="text-gray-300 text-lg max-w-3xl mx-auto">
-            Hey there! Naimur Rahman, a passionate Video Editor and Motion
+            Hey there! I'm Niloy Bhowmick, a passionate Video Editor and Motion
             Graphics Designer with a deep love for storytelling through visuals.
           </p>
         </motion.div>
@@ -41,14 +41,14 @@ export default function AboutPage() {
               <div className="text-center">
                 <div className="relative w-64 h-64 mx-auto mb-6">
                   <Image
-                    src="/naimur.png"
-                    alt="Naimur Rahman"
+                    src="/niloybhowmick.png"
+                    alt="Niloy Bhowmick"
                     fill
                     className="rounded-full object-cover"
                   />
                 </div>
                 <h2 className="text-2xl font-bold mb-2 text-white">
-                  Naimur Rahman
+                  Niloy Bhowmick
                 </h2>
                 <p className="text-blue-400 mb-4">
                   Video Editor & Motion Graphics Designer
@@ -61,7 +61,7 @@ export default function AboutPage() {
                 {/* Social Icons */}
                 <div className="flex justify-center gap-4">
                   <a
-                    href="https://www.linkedin.com/in/naimur202164/"
+                    href="https://www.linkedin.com/in/niloy-bhowmick"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-400 hover:text-blue-500 transition-colors"
@@ -69,7 +69,7 @@ export default function AboutPage() {
                     <Linkedin size={24} />
                   </a>
                   <a
-                    href="https://www.instagram.com/@naimur202170"
+                    href="https://www.instagram.com/its.niloybhowmick"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-400 hover:text-pink-500 transition-colors"
@@ -77,7 +77,7 @@ export default function AboutPage() {
                     <Instagram size={24} />
                   </a>
                   <a
-                    href="https://www.facebook.com/naimur202170"
+                    href="https://www.facebook.com/Its.niloybhowmick"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-400 hover:text-blue-600 transition-colors"
@@ -85,7 +85,7 @@ export default function AboutPage() {
                     <Facebook size={24} />
                   </a>
                   <a
-                    href="https://www.youtube.com/@naimur202164"
+                    href="https://www.youtube.com/@itsniloybhowmick"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-400 hover:text-red-600 transition-colors"
@@ -93,7 +93,7 @@ export default function AboutPage() {
                     <Youtube size={24} />
                   </a>
                   <a
-                    href="https://github.com/naimur202165"
+                    href="https://github.com/Zan-getsu"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-400 hover:text-white transition-colors"
@@ -118,11 +118,11 @@ export default function AboutPage() {
               </h3>
               <div className="space-y-4 text-gray-300">
                 <p>
-                  I specialize Premiere Pro, and After Effects — delivering
-                  cinematic edits, clean motion graphics, and polished visual
-                  storytelling. From smooth transitions to precise audio syncing
-                  and dynamic animations — I focus on making your content not
-                  just polished, but powerful.
+                  I specialize in DaVinci Resolve, Premiere Pro, and After
+                  Effects — delivering cinematic edits, clean motion graphics,
+                  and polished visual storytelling. From smooth transitions to
+                  precise audio syncing and dynamic animations — I focus on
+                  making your content not just polished, but powerful.
                 </p>
                 <p>
                   If you're looking for someone who blends creativity with

@@ -39,7 +39,7 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  const apiKey = "re_hfH5afG8_9rDkgdLckc6AbZVqo9bHY5nX";
+  const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) {
     return NextResponse.json(
       { error: "Missing Resend API Key" },
@@ -53,7 +53,7 @@ export async function POST(req: NextRequest) {
 
     const { data, error } = await resend.emails.send({
       from: "From Portfolio <contact@itsniloy.me>",
-      to: ["contact.naimur202164@gmail.com"],
+      to: ["contact.niloybhowmick@gmail.com"],
       subject: `New Message from Portfolio - ${projectType || "General Inquiry"}`,
       react: EmailTemplate({ name, email, message, projectType, timeline }),
     });

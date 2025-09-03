@@ -1,19 +1,19 @@
 "use client";
 
-import GlassmorphismCard from "@/components/glassmorphism-card";
-import MouseMoveEffect from "@/components/mouse-move-effect";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import {
-  getVideoCategoriesWithCountIncludingAll,
-  getVideoProjectsByCategory,
-} from "@/lib/helper";
-import type { VideoProject } from "@/types/videos";
+import { useState, useEffect, useCallback } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Clock, Loader2, Play, User } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useCallback, useEffect, useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import GlassmorphismCard from "@/components/glassmorphism-card";
+import MouseMoveEffect from "@/components/mouse-move-effect";
+import { Play, Clock, User, ArrowRight, Filter, Loader2 } from "lucide-react";
+import {
+  getVideoProjectsByCategory,
+  getVideoCategoriesWithCountIncludingAll,
+} from "@/lib/helper";
+import type { VideoProject } from "@/types/videos";
 
 const categories = getVideoCategoriesWithCountIncludingAll();
 
@@ -86,9 +86,6 @@ export default function HomePage() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h2 className="text-2xl py-10">
-              Hello, This is Naimur , I'm a Professional Video Editor.
-            </h2>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               My Video Projects
             </h2>

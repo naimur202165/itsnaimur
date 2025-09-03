@@ -1,30 +1,30 @@
 "use client";
 
-import CTASection from "@/components/CTASection";
-import GlassmorphismCard from "@/components/glassmorphism-card";
-import { Badge } from "@/components/ui/badge";
-import {
-  achievements,
-  specializations,
-  videoEditingSkills,
-  workflow,
-} from "@/db/skills";
-import { motion } from "framer-motion";
-import {
-  BarChart3,
-  Brush,
-  Eye,
-  FileSearch,
-  ScissorsSquare,
-  Send,
-  Star,
-} from "lucide-react";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { Badge } from "@/components/ui/badge";
+import GlassmorphismCard from "@/components/glassmorphism-card";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import {
+  BarChart3,
+  FileSearch,
+  ScissorsSquare,
+  Brush,
+  Eye,
+  Send,
+  Star,
+} from "lucide-react";
+import CTASection from "@/components/CTASection";
+import {
+  videoEditingSkills,
+  specializations,
+  achievements,
+  workflow,
+} from "@/db/skills";
 
 const iconMap = [
   { icon: <FileSearch size={20} />, bg: "#0ea5e9" }, // Project Analysis

@@ -1,26 +1,26 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import type React from "react";
+import type { Metadata } from "next";
+import { Inter, Nunito } from "next/font/google";
 
-import Footer from "@/components/footer";
-import JumpToTop from "@/components/jump-to-top";
-import MouseMoveEffect from "@/components/mouse-move-effect";
-import Navbar from "@/components/navbar";
-import { Toaster } from "@/components/ui/sonner";
 import "./globals.css";
+import Navbar from "@/components/navbar";
+import MouseMoveEffect from "@/components/mouse-move-effect";
+import JumpToTop from "@/components/jump-to-top";
+import Footer from "@/components/footer";
+import { Toaster } from "@/components/ui/sonner";
 
 const inter = Inter({ subsets: ["latin"] });
 // const nunito = Nunito({ subsets: ["latin"] });q
 
 export const metadata: Metadata = {
   title: {
-    default: "Naimur Rahman – Video Editor & Motion Graphics Designer",
-    template: "%s | Naimur Rahman",
+    default: "Niloy Bhowmick – Video Editor & Motion Graphics Designer",
+    template: "%s | Niloy Bhowmick",
   },
   description:
     "Turning raw footage into visual stories — with style, precision, and a touch of cinematic magic. Niloy Bhowmick specializes in DaVinci Resolve, Premiere Pro, and After Effects — delivering cinematic edits, motion graphics, and polished storytelling.",
   keywords: [
-    "Naimur Rahman",
+    "Niloy Bhowmick",
     "Video Editor",
     "Motion Graphics Designer",
     "DaVinci Resolve",
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
     "Lower Thirds",
     "Audio Sync",
   ],
-  authors: [{ name: "Naimur Rahman", url: "https://www.itsnaimur.me" }],
-  creator: "Naimur Rahman",
-  publisher: "Naimur Rahman",
+  authors: [{ name: "Niloy Bhowmick", url: "https://www.itsniloy.me" }],
+  creator: "Niloy Bhowmick",
+  publisher: "Niloy Bhowmick",
   robots: {
     index: true,
     follow: true,
@@ -55,33 +55,33 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.itsnaimur.me",
-    title: "Naimur Rahman – Video Editor & Motion Graphics Designer",
+    url: "https://www.itsniloy.me",
+    title: "Niloy Bhowmick – Video Editor & Motion Graphics Designer",
     description:
       "Passionate Video Editor and Motion Graphics Designer delivering clean, cinematic edits and dynamic visual storytelling using DaVinci Resolve, Premiere Pro, and After Effects.",
-    siteName: "Naimur Portfolio",
+    siteName: "Niloy Bhowmick Portfolio",
     images: [
       {
-        url: "/naimur.png",
+        url: "/niloybhowmick.png",
         width: 1200,
         height: 630,
-        alt: "Naimur Rahman - Video Editor",
+        alt: "Niloy Bhowmick - Video Editor",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Naimur Rahman – Video Editor & Motion Graphics Designer",
+    title: "Niloy Bhowmick – Video Editor & Motion Graphics Designer",
     description:
       "Crafting cinematic edits, motion graphics, and powerful stories. Let's make your content stand out.",
-    creator: "@naimur", // update if you have a real Twitter handle
-    images: ["/naimur.png"],
+    creator: "@niloy_bhowmick", // update if you have a real Twitter handle
+    images: ["/niloybhowmick.png"],
   },
   verification: {
     google: "your-google-verification-code",
   },
   alternates: {
-    canonical: "https://www.itsnaimur.me",
+    canonical: "https://www.itsniloy.me",
   },
   category: "Video Editing",
 };
@@ -103,14 +103,14 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
-              name: "Naimur Rahman",
-              url: "https://www.itsnaimur.me",
-              image: "/naimur.png",
+              name: "Niloy Bhowmick",
+              url: "https://www.itsniloy.me",
+              image: "/niloybhowmick.png",
               sameAs: [
-                "https://www.itsnaimur.me",
-                "https://linkedin.com/in/naimur202164", // update if available
-                "https://youtube.com/@naimur202164", // update if available
-                "https://twitter.com/naimur202164", // update if available
+                "https://www.itsniloy.me",
+                "https://linkedin.com/in/niloybhowmick", // update if available
+                "https://youtube.com/@niloybhowmick", // update if available
+                "https://twitter.com/niloy_bhowmick", // update if available
               ],
               jobTitle: "Video Editor & Motion Graphics Designer",
               knowsAbout: [
@@ -128,7 +128,7 @@ export default function RootLayout({
               },
               alumniOf: {
                 "@type": "Organization",
-                name: "National University of Bangladesh",
+                name: "Green University of Bangladesh",
               },
             }),
           }}

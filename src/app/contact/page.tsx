@@ -1,10 +1,56 @@
 "use client";
 
-import GlassmorphismCard from "@/components/glassmorphism-card";
 import { motion } from "framer-motion";
-import { Clock, Mail, MapPin, MessageCircle } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import GlassmorphismCard from "@/components/glassmorphism-card";
+import { Mail, MapPin, Clock, Send, MessageCircle } from "lucide-react";
+import { toast } from "sonner"
 
 export default function ContactPage() {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    const name = formData.get("name") as string;
+    const email = formData.get("email") as string;
+    const message = formData.get("message") as string;
+    const projectType = formData.get("project-type") as string;
+    const timeline = formData.get("timeline") as string;
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailRegex.test(email)) {
+      toast("Please enter a valid email address.")
+      return;
+    }
+
+    if (!message || message.length < 30) {
+      toast("Message should be at least 30 characters long.");
+      return;
+    }
+
+    const res = await fetch("/api/send-email", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ name, email, message, projectType, timeline }),
+    });
+
+    const result = await res.json();
+
+    if (res.ok) {
+      toast("Message sent successfully!");
+      form.reset();
+    } else {
+      toast(result.error || "Something went wrong.");
+    }
+  };
+
   return (
     <div className="min-h-screen py-20 px-4">
       <div className="max-w-6xl mx-auto">
@@ -47,7 +93,7 @@ export default function ContactPage() {
                       href="mailto:contact.niloybhowmick@gmail.com"
                       className="text-white hover:text-blue-400 transition-colors"
                     >
-                      contact.naimur201264@gmail.com
+                      contact.niloybhowmick@gmail.com
                     </a>
                   </div>
                 </div>
@@ -59,12 +105,12 @@ export default function ContactPage() {
                   <div>
                     <p className="text-gray-400 text-sm">WhatsApp</p>
                     <a
-                      href="https://wa.me/+8801778470061"
+                      href="https://wa.me/+8801580385556"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-white hover:text-green-400 transition-colors"
                     >
-                      +88 (017) 7847-0061
+                      +88 (015) 803-85556
                     </a>
                   </div>
                 </div>
@@ -132,6 +178,132 @@ export default function ContactPage() {
           </motion.div>
 
           {/* Contact Form */}
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+          >
+            <GlassmorphismCard className="p-8">
+              <h3 className="text-2xl font-semibold mb-6 text-white">
+                Send Message
+              </h3>
+              <form className="space-y-6" onSubmit={handleSubmit}>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <label
+                      htmlFor="name"
+                      className="text-sm text-gray-300 mb-2 block"
+                    >
+                      Name *
+                    </label>
+                    <Input
+                      id="name"
+                      name="name"
+                      type="text"
+                      required
+                      className="bg-gray-800/50 border-gray-600 text-white"
+                      placeholder="Your name"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      htmlFor="email"
+                      className="text-sm text-gray-300 mb-2 block"
+                    >
+                      Email *
+                    </label>
+                    <Input
+                      id="email"
+                      name="email"
+                      type="email"
+                      required
+                      className="bg-gray-800/50 border-gray-600 text-white"
+                      placeholder="you@example.com"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="project-type"
+                    className="text-sm text-gray-300 mb-2 block"
+                  >
+                    Project Type
+                  </label>
+                  <select
+                    id="project-type"
+                    name="project-type"
+                    className="w-full bg-gray-800/50 border border-gray-600 text-white rounded-md px-3 py-2"
+                  >
+                    <option value="">Select project type</option>
+                    <option value="youtube">YouTube Video</option>
+                    <option value="social-media">Social Media Content</option>
+                    <option value="promo">Promotional Video</option>
+                    <option value="tutorial">Tutorial/Course</option>
+                    <option value="documentary">Documentary</option>
+                    <option value="animation">Logo Animation</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="timeline"
+                    className="text-sm text-gray-300 mb-2 block"
+                  >
+                    Timeline
+                  </label>
+                  <Input
+                    id="timeline"
+                    name="timeline"
+                    type="text"
+                    className="bg-gray-800/50 border-gray-600 text-white"
+                    placeholder="e.g., 1 week, ASAP"
+                  />
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="message"
+                    className="text-sm text-gray-300 mb-2 block"
+                  >
+                    Project Details *
+                  </label>
+                  <Textarea
+                    id="message"
+                    name="message"
+                    required
+                    rows={6}
+                    placeholder="Tell me about your project..."
+                    className="bg-gray-800/50 border-gray-600 text-white resize-none"
+                  />
+                </div>
+
+                <Button
+                  type="submit"
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white cursor-pointer"
+                >
+                  <Send className="mr-2" size={16} />
+                  Send Message
+                </Button>
+              </form>
+
+              <div className="mt-6 pt-6 border-t border-gray-700">
+                <p className="text-gray-400 text-sm text-center">
+                  Prefer to chat directly? Reach out on{" "}
+                  <a
+                    href="https://wa.me/+8801580385556"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-green-400 hover:text-green-300"
+                  >
+                    WhatsApp
+                  </a>{" "}
+                  for instant communication.
+                </p>
+              </div>
+            </GlassmorphismCard>
+          </motion.div>
         </div>
 
         {/* FAQ Section */}
