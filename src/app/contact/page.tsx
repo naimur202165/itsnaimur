@@ -1,12 +1,12 @@
 "use client";
 
-import { motion } from "framer-motion";
+import GlassmorphismCard from "@/components/glassmorphism-card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import GlassmorphismCard from "@/components/glassmorphism-card";
-import { Mail, MapPin, Clock, Send, MessageCircle } from "lucide-react";
-import { toast } from "sonner"
+import { motion } from "framer-motion";
+import { Clock, Mail, MapPin, MessageCircle, Send } from "lucide-react";
+import { toast } from "sonner";
 
 export default function ContactPage() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -24,7 +24,7 @@ export default function ContactPage() {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (!emailRegex.test(email)) {
-      toast("Please enter a valid email address.")
+      toast("Please enter a valid email address.");
       return;
     }
 
@@ -90,10 +90,10 @@ export default function ContactPage() {
                   <div>
                     <p className="text-gray-400 text-sm">Email</p>
                     <a
-                      href="mailto:contact.niloybhowmick@gmail.com"
+                      href="mailto:contact.naimur201264@gmail.com"
                       className="text-white hover:text-blue-400 transition-colors"
                     >
-                      contact.niloybhowmick@gmail.com
+                      contact.naimur201264@@gmail.com
                     </a>
                   </div>
                 </div>
@@ -105,12 +105,12 @@ export default function ContactPage() {
                   <div>
                     <p className="text-gray-400 text-sm">WhatsApp</p>
                     <a
-                      href="https://wa.me/+8801580385556"
+                      href="https://wa.me/+88001778470061"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-white hover:text-green-400 transition-colors"
                     >
-                      +88 (015) 803-85556
+                      +88 (017) 778-470061
                     </a>
                   </div>
                 </div>
@@ -292,7 +292,7 @@ export default function ContactPage() {
                 <p className="text-gray-400 text-sm text-center">
                   Prefer to chat directly? Reach out on{" "}
                   <a
-                    href="https://wa.me/+8801580385556"
+                    href="https://wa.me/+8801778470061"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-green-400 hover:text-green-300"
