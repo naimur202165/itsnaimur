@@ -9,31 +9,6 @@ import { Clock, Mail, MapPin, MessageCircle, Send } from "lucide-react";
 import { toast } from "sonner";
 
 export default function ContactPage() {
-  const getErrorMessage = (error: unknown): string => {
-    if (typeof error === "string") {
-      return error;
-    }
-    if (error && typeof error === "object") {
-      if ("message" in error && typeof error.message === "string") {
-        return error.message;
-      }
-      if ("error" in error) {
-        if (typeof error.error === "object") {
-          return JSON.stringify(error.error);
-        }
-        if (typeof error.error === "string") {
-          return error.error;
-        }
-      }
-    }
-    return "Something went wrong.";
-  };
-  interface ContactForm {
-    name: string;
-    email: string;
-    message: string;
-  }
-
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -72,10 +47,10 @@ export default function ContactPage() {
       toast("Message sent successfully!");
       form.reset();
     } else {
-      const errorMessage = getErrorMessage(result);
-      toast(errorMessage);
+      toast(result.error || "Something went wrong.");
     }
   };
+
   return (
     <div className="min-h-screen py-20 px-4">
       <div className="max-w-6xl mx-auto">
