@@ -1,5 +1,3 @@
-import { VideoProject } from "@/types/videos";
-
 // export const videoProjectsData = {
 //   "Talking Head": [
 //     {
@@ -247,8 +245,6 @@ import { VideoProject } from "@/types/videos";
 //     },
 //   ],
 // };
-
-
 
 // export const allVideoProjects: VideoProject[] = [
 //   {
