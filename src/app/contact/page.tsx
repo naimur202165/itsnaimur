@@ -33,25 +33,21 @@ export default function ContactPage() {
       return;
     }
 
-    try {
-      const res = await fetch("/api/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ name, email, message, projectType, timeline }),
-      });
+    const res = await fetch("/api/send-email", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ name, email, message, projectType, timeline }),
+    });
 
-      if (res.ok) {
-        toast("Message sent successfully!");
-        form.reset();
-      } else {
-        const errorData = await res.json();
-        const errorMessage = errorData.error || "An unknown error occurred.";
-        toast(errorMessage);
-      }
-    } catch (error) {
-      toast("Failed to send message. Please try again.");
+    const result = await res.json();
+
+    if (res.ok) {
+      toast("Message sent successfully!");
+      form.reset();
+    } else {
+      toast(result.error || "Something went wrong.");
     }
   };
 
@@ -94,10 +90,10 @@ export default function ContactPage() {
                   <div>
                     <p className="text-gray-400 text-sm">Email</p>
                     <a
-                      href="mailto:contact.naimur201264@gmail.com"
+                      href="mailto:contact.naimur202164@gmail.com"
                       className="text-white hover:text-blue-400 transition-colors"
                     >
-                      contact.naimur201264@gmail.com
+                      contact.naimur202164@gmail.com
                     </a>
                   </div>
                 </div>
@@ -109,12 +105,12 @@ export default function ContactPage() {
                   <div>
                     <p className="text-gray-400 text-sm">WhatsApp</p>
                     <a
-                      href="https://wa.me/+88001778470061"
+                      href="https://wa.me/+880 01778470061"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-white hover:text-green-400 transition-colors"
                     >
-                      +88 (017) 778-470061
+                      +88 (017) 78470061
                     </a>
                   </div>
                 </div>

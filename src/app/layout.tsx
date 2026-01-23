@@ -15,10 +15,10 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: {
     default: "Naimur Rahman – Video Editor & Motion Graphics Designer",
-    template: "%s | Naimur Rahman",
+    template: " | Naimur Rahman",
   },
   description:
-    "Turning raw footage into visual stories — with style, precision, and a touch of cinematic magic. Naimur Rahman specializes in DaVinci Resolve, Premiere Pro, and After Effects — delivering cinematic edits, motion graphics, and polished storytelling.",
+    "Turning raw footage into visual stories — with style, precision, and a touch of cinematic magic. Niloy Bhowmick specializes in DaVinci Resolve, Premiere Pro, and After Effects — delivering cinematic edits, motion graphics, and polished storytelling.",
   keywords: [
     "Naimur Rahman",
     "Video Editor",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     "Lower Thirds",
     "Audio Sync",
   ],
-  authors: [{ name: "Naimur Rahman", url: "https://www.itsnaimur.me" }],
+  authors: [{ name: "Naimur Rahman", url: "https://www.naimur.me" }],
   creator: "Naimur Rahman",
   publisher: "Naimur Rahman",
   robots: {
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.itsnaimur.me",
+    url: "https://www.naimur.me",
     title: "Naimur Rahman – Video Editor & Motion Graphics Designer",
     description:
       "Passionate Video Editor and Motion Graphics Designer delivering clean, cinematic edits and dynamic visual storytelling using DaVinci Resolve, Premiere Pro, and After Effects.",
@@ -81,7 +81,7 @@ export const metadata: Metadata = {
     google: "your-google-verification-code",
   },
   alternates: {
-    canonical: "https://www.itsnaimur.me",
+    canonical: "https://www.naimur.me",
   },
   category: "Video Editing",
 };
@@ -104,13 +104,13 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               name: "Naimur Rahman",
-              url: "https://www.itsnaimur.me",
+              url: "https://www.naimur.me",
               image: "/naimur.png",
               sameAs: [
-                "https://www.itsnaimur.me",
-                "https://linkedin.com/in/naimurrahman", // update if available
-                "https://youtube.com/@naimurrahman", // update if available
-                "https://twitter.com/naimur_rahman", // update if available
+                "https://www.naimur.me",
+                "https://www.linkedin.com/in/naimur202164/", // update if available
+                "https://www.youtube.com/@naimurmotion", // update if available
+                // "https://twitter.com/naimur_rahman", // update if available
               ],
               jobTitle: "Video Editor & Motion Graphics Designer",
               knowsAbout: [
@@ -128,7 +128,7 @@ export default function RootLayout({
               },
               alumniOf: {
                 "@type": "Organization",
-                name: "Green University of Bangladesh",
+                name: "National University of Bangladesh",
               },
             }),
           }}

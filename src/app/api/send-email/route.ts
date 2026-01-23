@@ -8,7 +8,7 @@ export async function POST(req: NextRequest) {
   if (!name || !email || !message) {
     return NextResponse.json(
       { error: "Missing required fields" },
-      { status: 400 }
+      { status: 400 },
     );
   }
 
@@ -17,7 +17,7 @@ export async function POST(req: NextRequest) {
   if (!emailRegex.test(email)) {
     return NextResponse.json(
       { error: "Invalid email format" },
-      { status: 400 }
+      { status: 400 },
     );
   }
 
@@ -25,7 +25,7 @@ export async function POST(req: NextRequest) {
   if (message.trim().length < 30) {
     return NextResponse.json(
       { error: "Message should be at least 30 characters long" },
-      { status: 400 }
+      { status: 400 },
     );
   }
 
@@ -35,7 +35,7 @@ export async function POST(req: NextRequest) {
   if (blockList.some((blocked) => domain.includes(blocked))) {
     return NextResponse.json(
       { error: "Temporary email addresses are not allowed" },
-      { status: 403 }
+      { status: 403 },
     );
   }
 
@@ -43,7 +43,7 @@ export async function POST(req: NextRequest) {
   if (!apiKey) {
     return NextResponse.json(
       { error: "Missing Resend API Key" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 
@@ -66,7 +66,7 @@ export async function POST(req: NextRequest) {
   } catch (error) {
     return NextResponse.json(
       { error: "Failed to send email" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }

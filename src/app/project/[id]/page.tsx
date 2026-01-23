@@ -1,12 +1,8 @@
 "use client";
 
-import { useState } from "react";
-import { useParams } from "next/navigation";
-import { motion } from "framer-motion";
-import Image from "next/image";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import GlassmorphismCard from "@/components/glassmorphism-card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import {
   Carousel,
   CarouselContent,
@@ -14,17 +10,21 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import GlassmorphismCard from "@/components/glassmorphism-card";
+import { getVideoProjectById, getYouTubeEmbedUrl } from "@/lib/helper";
+import { motion } from "framer-motion";
 import {
   ArrowLeft,
-  Play,
-  Clock,
-  User,
   Calendar,
-  Quote,
+  Clock,
   ExternalLink,
+  Play,
+  Quote,
+  User,
 } from "lucide-react";
-import { getVideoProjectById, getYouTubeEmbedUrl } from "@/lib/helper";
+import Image from "next/image";
+import Link from "next/link";
+import { useParams } from "next/navigation";
+import { useState } from "react";
 
 export default function ProjectPage() {
   const params = useParams();
@@ -85,7 +85,7 @@ export default function ProjectPage() {
             <div className="aspect-video relative rounded-lg overflow-hidden bg-gray-900">
               {showVideo && embedUrl ? (
                 <iframe
-                  src={`${embedUrl}?autoplay=1`}
+                  src={`${embedUrl}?autoplay=1&modestbranding=1&rel=0`}
                   title={project.video_title}
                   className="w-full h-full"
                   allowFullScreen
@@ -160,7 +160,7 @@ export default function ProjectPage() {
                           year: "numeric",
                           month: "short",
                           day: "numeric",
-                        }
+                        },
                       )}
                     </span>
                   </div>
