@@ -18,7 +18,7 @@ export const allVideoProjects: VideoProject[] = [
     software_used: ["DaVinci Resolve", "After Effects"],
   },
   {
-    id: "JSZmQxg3fos",
+    id: " Y6FpRcPSIxY",
     video_title: "পথের ফুলের মতোই কিছু মানুষ পথে এসে হাসি দিয়ে যায়",
     video_description: "পথের ফুলের মতোই কিছু মানুষ পথে এসে হাসি দিয়ে যায়",
     tags: ["Blog", "Shorts"],
@@ -29,7 +29,7 @@ export const allVideoProjects: VideoProject[] = [
     client_feedback: ".",
     video_link: "https://youtu.be/Y6FpRcPSIxY",
     project_images: ["/path/to/image1.jpg"],
-    category: ["Talking Head"],
+    category: ["Shorts"],
     duration: "2:30",
     software_used: ["DaVinci Resolve", "After Effects"],
   },
