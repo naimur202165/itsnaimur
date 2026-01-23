@@ -2,7 +2,7 @@ import { VideoProject } from "@/types/videos";
 
 export const allVideoProjects: VideoProject[] = [
   {
-    id: " Y6FpRcPSIxY",
+    id: " Y6FpRcPSIxYs",
     video_title: "পথের ফুলের মতোই কিছু মানুষ পথে এসে হাসি দিয়ে যায়",
     video_description: "পথের ফুলের মতোই কিছু মানুষ পথে এসে হাসি দিয়ে যায়",
     tags: ["Blog", "Shorts"],
@@ -18,7 +18,7 @@ export const allVideoProjects: VideoProject[] = [
     software_used: ["Premiere Pro", "After Effects"],
   },
   {
-    id: " CGGeIBsuWWU",
+    id: " CGGeIBsuWWUe",
     video_title: "As a Finnal Act Of Love",
     video_description:
       "As a final act of love, I will never reach you out again. But I will become everything I told you about.I won't chase you, I won't beg for you a closure. Instead, I will pour all that love into myself.",
@@ -35,7 +35,7 @@ export const allVideoProjects: VideoProject[] = [
     software_used: ["Premiere Pro", "After Effects"],
   },
   {
-    id: " 82k63GhPlpQ",
+    id: " 82k63GhPlpQq",
     video_title: "আমরা ভাই বিলবোর্ড  যদি হই তাইলে",
     video_description: "The video is just text bassed editing",
     tags: ["Blog", "Shorts"],
