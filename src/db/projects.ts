@@ -2,15 +2,15 @@ import { VideoProject } from "@/types/videos";
 
 export const allVideoProjects: VideoProject[] = [
   {
-    id: "S1gb7ugYJO4",
+    id: "JSZmQxg3fos",
     video_title: "Gig video",
     video_description: "Detailed description...",
     tags: ["Tag1", "Tag2"],
-    cover_image: "youtube-video-id",
+    cover_image: "S1gb7ugYJO4",
     publish_date: "2024-01-01",
-    client_name: "Client Name",
+    client_name: "Naimur Rahman",
     client_image: "/companies/client-logo.png",
-    client_feedback: "Client testimonial...",
+    client_feedback: "This my gig video project.",
     video_link: "https://youtu.be/S1gb7ugYJO4",
     project_images: ["/path/to/image1.jpg"],
     category: ["Talking Head"],
