@@ -18,6 +18,23 @@ export const allVideoProjects: VideoProject[] = [
     software_used: ["Premiere Pro", "After Effects"],
   },
   {
+    id: " CGGeIBsuWWU",
+    video_title: "As a Finnal Act Of Love",
+    video_description:
+      "As a final act of love, I will never reach you out again. But I will become everything I told you about.I won't chase you, I won't beg for you a closure. Instead, I will pour all that love into myself.",
+    tags: ["Blog", "Shorts"],
+    cover_image: "CGGeIBsuWWU",
+    publish_date: "2025-12-30",
+    client_name: "Naimur Rahman",
+    client_image: "/companies/client-logo.png",
+    client_feedback: ".",
+    video_link: "https://youtu.be/CGGeIBsuWWU?si=eZA2jpW9Fi5hJKzo",
+    project_images: ["/path/to/image1.jpg"],
+    category: ["Shorts"],
+    duration: "22 sec",
+    software_used: ["Premiere Pro", "After Effects"],
+  },
+  {
     id: " 82k63GhPlpQ",
     video_title: "আমরা ভাই বিলবোর্ড  যদি হই তাইলে",
     video_description: "The video is just text bassed editing",
