@@ -4,8 +4,8 @@ export const allVideoProjects: VideoProject[] = [
   {
     id: "JSZmQxg3fos",
     video_title: "Gig video",
-    video_description: "Detailed description...",
-    tags: ["Tag1", "Tag2"],
+    video_description: "This is my gig video project.",
+    tags: ["Gig video", "Talking Head"],
     cover_image: "S1gb7ugYJO4",
     publish_date: "2024-01-01",
     client_name: "Naimur Rahman",
@@ -14,7 +14,7 @@ export const allVideoProjects: VideoProject[] = [
     video_link: "https://youtu.be/S1gb7ugYJO4",
     project_images: ["/path/to/image1.jpg"],
     category: ["Talking Head"],
-    duration: "5:30",
+    duration: "2:30",
     software_used: ["DaVinci Resolve", "After Effects"],
   },
   // {
