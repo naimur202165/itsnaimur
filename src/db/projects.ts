@@ -22,6 +22,22 @@ export const videoProjectsData = {
 
   Shorts: [
     {
+      id: "u56KigbE-mc",
+      video_title: "মানুষ আপনার গল্প শুনতে চায়",
+      video_description: `.`,
+      tags: ["Shorts"],
+      cover_image: "u56KigbE-mc",
+      publish_date: "2025-10-04",
+      client_name: "Naimur Rahman",
+      client_image: "/companies/sl-logo.png",
+      client_feedback: "",
+      video_link: "https://youtube.com/shorts/u56KigbE-mc",
+      project_images: [],
+      category: ["Shorts"],
+      duration: "31sec",
+      software_used: ["Premier pro "],
+    },
+    {
       id: "82k63GhPlpQ",
       video_title: "আমারা ভাই বিলবোর্ড যদি হই  ",
       video_description: `.`,
@@ -57,6 +73,22 @@ export const videoProjectsData = {
 };
 
 export const allVideoProjects: VideoProject[] = [
+  {
+    id: "u56KigbE-mc",
+    video_title: "মানুষ আপনার গল্প শুনতে চায়",
+    video_description: `.`,
+    tags: ["Shorts"],
+    cover_image: "u56KigbE-mc",
+    publish_date: "2025-10-04",
+    client_name: "Naimur Rahman",
+    client_image: "/companies/sl-logo.png",
+    client_feedback: "",
+    video_link: "https://youtube.com/shorts/u56KigbE-mc",
+    project_images: [],
+    category: ["Shorts"],
+    duration: "31sec",
+    software_used: ["Premier pro "],
+  },
   {
     id: "82k63GhPlpQ",
     video_title: "আমারা ভাই বিলবোর্ড যদি হই  ",
