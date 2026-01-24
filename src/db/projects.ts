@@ -22,6 +22,23 @@ export const videoProjectsData = {
 
   Shorts: [
     {
+      id: "CGGeIBsuWWU",
+      video_title: "As final act of love",
+      video_description: `This video is just text based editing with background music.`,
+      tags: ["Shorts"],
+      cover_image: "CGGeIBsuWWU",
+      publish_date: "2025-12-30",
+      client_name: "Naimur Rahman",
+      client_image: "/companies/sl-logo.png",
+      client_feedback: "",
+      video_link: "https://youtu.be/CGGeIBsuWWU",
+      project_images: [],
+      category: ["Shorts"],
+      duration: "22sec",
+      software_used: ["Premier pro "],
+    },
+
+    {
       id: "u56KigbE-mc",
       video_title: "মানুষ আপনার গল্প শুনতে চায়",
       video_description: `.`,
@@ -73,6 +90,22 @@ export const videoProjectsData = {
 };
 
 export const allVideoProjects: VideoProject[] = [
+  {
+    id: "CGGeIBsuWWU",
+    video_title: "As final act of love",
+    video_description: `This video is just text based editing with background music.`,
+    tags: ["Shorts"],
+    cover_image: "CGGeIBsuWWU",
+    publish_date: "2025-12-30",
+    client_name: "Naimur Rahman",
+    client_image: "/companies/sl-logo.png",
+    client_feedback: "",
+    video_link: "https://youtu.be/CGGeIBsuWWU",
+    project_images: [],
+    category: ["Shorts"],
+    duration: "22sec",
+    software_used: ["Premier pro "],
+  },
   {
     id: "u56KigbE-mc",
     video_title: "মানুষ আপনার গল্প শুনতে চায়",
