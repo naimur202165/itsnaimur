@@ -22,6 +22,22 @@ export const videoProjectsData = {
 
   Shorts: [
     {
+      id: "82k63GhPlpQ",
+      video_title: "আমারা ভাই বিলবোর্ড যদি হই  ",
+      video_description: `.`,
+      tags: ["Shorts"],
+      cover_image: "82k63GhPlpQ",
+      publish_date: "2025-10-04",
+      client_name: "Naimur Rahman",
+      client_image: "/companies/sl-logo.png",
+      client_feedback: "",
+      video_link: "https://youtube.com/shorts/82k63GhPlpQ",
+      project_images: [],
+      category: ["Shorts"],
+      duration: "31sec",
+      software_used: ["DaVinci Resolve"],
+    },
+    {
       id: "Y6FpRcPSIxY",
       video_title: "পথের ফুলের মতোই কিছু মানুষ পথে এসে হাসি দিয়ে যায় ",
       video_description: `.`,
@@ -41,6 +57,22 @@ export const videoProjectsData = {
 };
 
 export const allVideoProjects: VideoProject[] = [
+  {
+    id: "82k63GhPlpQ",
+    video_title: "আমারা ভাই বিলবোর্ড যদি হই  ",
+    video_description: `.`,
+    tags: ["Shorts"],
+    cover_image: "82k63GhPlpQ",
+    publish_date: "2025-10-04",
+    client_name: "Naimur Rahman",
+    client_image: "/companies/sl-logo.png",
+    client_feedback: "",
+    video_link: "https://youtube.com/shorts/82k63GhPlpQ",
+    project_images: [],
+    category: ["Shorts"],
+    duration: "31sec",
+    software_used: ["Premier pro "],
+  },
   {
     id: "S1gb7ugYJO4",
     video_title: "Gig Video ",
@@ -64,7 +96,7 @@ export const allVideoProjects: VideoProject[] = [
     tags: ["Talking Head", "Explainer"],
     cover_image: "Y6FpRcPSIxY",
     publish_date: "2024-08-04",
-    client_name: "Stack Learner",
+    client_name: "Naimur Rahman",
     client_image: "/companies/sl-logo.png",
     client_feedback: "",
     video_link: "https://youtu.be/Y6FpRcPSIxY?si=xxdee_CUanasN5sV",
