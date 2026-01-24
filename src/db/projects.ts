@@ -22,6 +22,23 @@ export const videoProjectsData = {
 
   Shorts: [
     {
+      id: "DTO99jAijH4",
+      video_title: "After Effect Map Pin Animation",
+      video_description: `This video is just explaining about After Effect Map Pin Animation.`,
+      tags: ["Shorts", "Explainer"],
+      cover_image: "DTO99jAijH4",
+      publish_date: "2025-11-30",
+      client_name: "Naimur Rahman",
+      client_image: "/companies/sl-logo.png",
+      client_feedback: "",
+      video_link: "https://youtu.be/DTO99jAijH4",
+      project_images: [],
+      category: ["Shorts"],
+      duration: "30sec",
+      software_used: ["Premier pro ", "After Effect"],
+    },
+
+    {
       id: "CGGeIBsuWWU",
       video_title: "As final act of love",
       video_description: `This video is just text based editing with background music.`,
@@ -90,6 +107,22 @@ export const videoProjectsData = {
 };
 
 export const allVideoProjects: VideoProject[] = [
+  {
+    id: "DTO99jAijH4",
+    video_title: "After Effect Map Pin Animation",
+    video_description: `This video is just explaining about After Effect Map Pin Animation.`,
+    tags: ["Shorts", "Explainer"],
+    cover_image: "DTO99jAijH4",
+    publish_date: "2025-11-30",
+    client_name: "Naimur Rahman",
+    client_image: "/companies/sl-logo.png",
+    client_feedback: "",
+    video_link: "https://youtu.be/DTO99jAijH4",
+    project_images: [],
+    category: ["Shorts"],
+    duration: "30sec",
+    software_used: ["Premier pro ", "After Effect"],
+  },
   {
     id: "CGGeIBsuWWU",
     video_title: "As final act of love",
