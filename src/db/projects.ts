@@ -1,6 +1,43 @@
 import { VideoProject } from "@/types/videos";
 
 export const videoProjectsData = {
+  // "75 Hard Challenges on After Effects": [
+  //   {
+  //     id: "S1gb7ugYJO4",
+  //     video_title: "Gig Video ",
+  //     video_description: `.`,
+  //     tags: ["Talking Head", "Explainer"],
+  //     cover_image: "S1gb7ugYJO4",
+  //     publish_date: "2025-12-6",
+  //     client_name: "Naimur Rahman",
+  //     client_image: "/companies/sl-logo.png",
+  //     client_feedback: "",
+  //     video_link: "https://youtu.be/S1gb7ugYJO4?si=40MXHApmPz1g-zzj",
+  //     project_images: [],
+  //     category: ["Talking Head"],
+  //     duration: "1:50",
+  //     software_used: ["Premier pro"],
+  //   },
+  // ],
+  Recreation: [
+    {
+      id: "Ig1laLcG4ec",
+      video_title: "Typography hooks",
+      video_description: `This video is just explaining  typography hooks. text based editing with background music.`,
+      tags: ["Recreation"],
+      cover_image: "Ig1laLcG4ec",
+      publish_date: "2025-11-30",
+      client_name: "Naimur Rahman",
+      client_image: "/companies/sl-logo.png",
+      client_feedback: "",
+      video_link: "https://youtube.com/shorts/Ig1laLcG4ec",
+      project_images: [],
+      category: ["Recreation"],
+      duration: "30sec",
+      software_used: ["Premier pro ", "After Effect"],
+    },
+  ],
+
   "Talking Head": [
     {
       id: "S1gb7ugYJO4",
@@ -21,22 +58,6 @@ export const videoProjectsData = {
   ],
 
   Shorts: [
-    {
-      id: "Ig1laLcG4ec",
-      video_title: "Typography hooks",
-      video_description: `This video is just explaining  typography hooks. text based editing with background music.`,
-      tags: ["Shorts", "Explainer"],
-      cover_image: "Ig1laLcG4ec",
-      publish_date: "2025-11-30",
-      client_name: "Naimur Rahman",
-      client_image: "/companies/sl-logo.png",
-      client_feedback: "",
-      video_link: "https://youtube.com/shorts/Ig1laLcG4ec",
-      project_images: [],
-      category: ["Shorts"],
-      duration: "30sec",
-      software_used: ["Premier pro ", "After Effect"],
-    },
     {
       id: "DTO99jAijH4",
       video_title: "After Effect Map Pin Animation",
@@ -110,7 +131,7 @@ export const videoProjectsData = {
       tags: ["Talking Head", "Explainer"],
       cover_image: "Y6FpRcPSIxY",
       publish_date: "2024-08-04",
-      client_name: "Stack Learner",
+      client_name: "Naimur Rahman",
       client_image: "/companies/sl-logo.png",
       client_feedback: "",
       video_link: "https://youtu.be/Y6FpRcPSIxY?si=xxdee_CUanasN5sV",
@@ -223,7 +244,7 @@ export const allVideoProjects: VideoProject[] = [
     id: "Ig1laLcG4ec",
     video_title: "Typography hooks",
     video_description: `This video is just explaining  typography hooks. text based editing with background music.`,
-    tags: ["Shorts", "Explainer"],
+    tags: ["Recreation"],
     cover_image: "Ig1laLcG4ec",
     publish_date: "2025-11-30",
     client_name: "Naimur Rahman",
@@ -231,7 +252,7 @@ export const allVideoProjects: VideoProject[] = [
     client_feedback: "",
     video_link: "https://youtube.com/shorts/Ig1laLcG4ec",
     project_images: [],
-    category: ["Shorts"],
+    category: ["Recreation"],
     duration: "30sec",
     software_used: ["Premier pro ", "After Effect"],
   },
