@@ -1,24 +1,24 @@
 import { VideoProject } from "@/types/videos";
 
 export const videoProjectsData = {
-  // "75 Hard Challenges on After Effects": [
-  //   {
-  //     id: "S1gb7ugYJO4",
-  //     video_title: "Gig Video ",
-  //     video_description: `.`,
-  //     tags: ["Talking Head", "Explainer"],
-  //     cover_image: "S1gb7ugYJO4",
-  //     publish_date: "2025-12-6",
-  //     client_name: "Naimur Rahman",
-  //     client_image: "/companies/sl-logo.png",
-  //     client_feedback: "",
-  //     video_link: "https://youtu.be/S1gb7ugYJO4?si=40MXHApmPz1g-zzj",
-  //     project_images: [],
-  //     category: ["Talking Head"],
-  //     duration: "1:50",
-  //     software_used: ["Premier pro"],
-  //   },
-  // ],
+  "75 Hard Challenges on After Effects": [
+    {
+      id: "S1gb7ugYJO4",
+      video_title: "App Ui Animation",
+      video_description: `This video is just create App Ui Animation. It is glassmorphism style animation.`,
+      tags: ["", "After Effects"],
+      cover_image: "a2WEc_VlyW0",
+      publish_date: "2026-01-26",
+      client_name: "Naimur Rahman",
+      client_image: "/companies/sl-logo.png",
+      client_feedback: "",
+      video_link: "https://youtu.be/a2WEc_VlyW0",
+      project_images: [],
+      category: ["75 Hard Challenges on After Effects"],
+      duration: "12sec",
+      software_used: ["After Effects"],
+    },
+  ],
   Recreation: [
     {
       id: "Ig1laLcG4ec",
@@ -144,6 +144,25 @@ export const videoProjectsData = {
 };
 
 export const allVideoProjects: VideoProject[] = [
+  // 75 Hard Challenges on After Effects
+  {
+    id: "a2WEc_VlyW0",
+    video_title: "App Ui Animation",
+    video_description: `This video is just create App Ui Animation. It is glassmorphism style animation.`,
+    tags: ["", "After Effects"],
+    cover_image: "a2WEc_VlyW0",
+    publish_date: "2026-01-26",
+    client_name: "Naimur Rahman",
+    client_image: "/companies/sl-logo.png",
+    client_feedback: "",
+    video_link: "https://youtu.be/a2WEc_VlyW0",
+    project_images: [],
+    category: ["75 Hard Challenges on After Effects"],
+    duration: "12sec",
+    software_used: ["After Effects"],
+  },
+  // 75 Hard Challenges on After Effects
+
   {
     id: "DTO99jAijH4",
     video_title: "After Effect Map Pin Animation",
