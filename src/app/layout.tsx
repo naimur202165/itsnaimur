@@ -58,16 +58,16 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://www.itsniloy.me",
-    title: "Niloy Bhowmick – Video Editor & Motion Graphics Designer",
+    title: "Naimur Rahman – Video Editor & Motion Graphics Designer",
     description:
       "Passionate Video Editor and Motion Graphics Designer delivering clean, cinematic edits and dynamic visual storytelling using DaVinci Resolve, Premiere Pro, and After Effects.",
-    siteName: "Niloy Bhowmick Portfolio",
+    siteName: "Naimur Rahman Portfolio",
     images: [
       {
-        url: "/niloybhowmick.png",
+        url: "/naimurrahman.png",
         width: 1200,
         height: 630,
-        alt: "Niloy Bhowmick - Video Editor",
+        alt: "Naimur Rahman - Video Editor",
       },
     ],
   },
