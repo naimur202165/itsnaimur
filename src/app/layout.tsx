@@ -105,14 +105,14 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
-              name: "Niloy Bhowmick",
-              url: "https://www.itsniloy.me",
-              image: "/niloybhowmick.png",
+              name: "Naimur Rahman",
+              url: "https://www.itsnaimur.me",
+              image: "/naimurrahman.png",
               sameAs: [
-                "https://www.itsniloy.me",
-                "https://linkedin.com/in/niloybhowmick", // update if available
-                "https://youtube.com/@niloybhowmick", // update if available
-                "https://twitter.com/niloy_bhowmick", // update if available
+                "https://www.itsnaimur.me",
+                "https://linkedin.com/in/naimur202164", // update if available
+                "https://youtube.com/@itsnaimurrahman", // update if available
+                "https://twitter.com/itsnaimurrahman", // update if available
               ],
               jobTitle: "Video Editor & Motion Graphics Designer",
               knowsAbout: [
@@ -130,7 +130,7 @@ export default function RootLayout({
               },
               alumniOf: {
                 "@type": "Organization",
-                name: "Green University of Bangladesh",
+                name: "National University of Bangladesh",
               },
             }),
           }}
