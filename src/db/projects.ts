@@ -34,5 +34,59 @@ export const allVideoProjects: VideoProject[] = [
     duration: "10:12",
     software_used: ["Davinci Resolve", "After Effects"],
   },
+  // Shorts
+    {
+    id: "0tFIJvIlsAY",
+    video_title: "What is your mindset",
+    video_description:
+      "Your mindset is the set of beliefs, assumptions, and attitudes that shape how you perceive the world, process experiences, and respond to challenges. It acts as a mental lens, dictating how you interpret failure, handle stress, and approach personal growth—ultimately determining",
+    tags: ["Video Editing", "Client Work", "Portfolio"],
+    cover_image: "0tFIJvIlsAY",
+    publish_date: "2026-09-18",
+    client_name: "Naimur rahman",
+    client_image: "/profile/naimurrahman.png",
+    client_feedback: "",
+    video_link: "https://www.youtube.com/shorts/0tFIJvIlsAY",
+    project_images: [],
+    category: ["Shorts",'ALL'],
+    duration: "10:12",
+    software_used: ["Premiere Pro", "After Effects"],
+  },
+  // Shorts
+  // {
+  //   id: "0tFIJvIlsAY",
+  //   video_title: "What is your mindset",
+  //   video_description:
+  //     "Your mindset is the set of beliefs, assumptions, and attitudes that shape how you perceive the world, process experiences, and respond to challenges. It acts as a mental lens, dictating how you interpret failure, handle stress, and approach personal growth—ultimately determining",
+  //   tags: ["Video Editing", "Client Work", "Portfolio"],
+  //   cover_image: "0tFIJvIlsAY",
+  //   publish_date: "2026-09-18",
+  //   client_name: "Naimur rahman",
+  //   client_image: "/profile/naimurrahman.png",
+  //   client_feedback: "",
+  //   video_link: "https://www.youtube.com/shorts/0tFIJvIlsAY",
+  //   project_images: [],
+  //   category: ["Shorts",'ALL'],
+  //   duration: "47:12",
+  //   software_used: ["Premiere Pro", "After Effects"],
+  // },
+  //  {
+  //   id: "7FECfBBUKzE",
+  //   video_title: "The cyber security mindset",
+  //   video_description:
+  //     "A cybersecurity mindset is a continuous state of vigilance, critical thinking, and proactive risk awareness regarding digital environments. Rather than viewing security as a one-time setup, it treats digital safety as an ongoing process rooted in core habits:",
+  //   tags: ["Video Editing", "Client Work", "Portfolio"],
+  //   cover_image: "7FECfBBUKzE",
+  //   publish_date: "2026-09-18",
+  //   client_name: "Naimur rahman",
+  //   client_image: "/profile/naimurrahman.png",
+  //   client_feedback: "",
+  //   video_link: "https://www.youtube.com/shorts/7FECfBBUKzE",
+  //   project_images: [],
+  //   category: ["Shorts",'ALL'],
+  //   duration: "1:18",
+  //   software_used: ["Premiere Pro", "After Effects"],
+  // },
  
 ];
+
