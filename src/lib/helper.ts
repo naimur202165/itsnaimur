@@ -4,10 +4,14 @@ import { Client, VideoProject } from "@/types/videos";
 
 // Helper function to get all projects sorted by date (latest first)
 export const getAllVideoProjects = (): VideoProject[] => {
-  return allVideoProjects.sort(
+  return [...allVideoProjects].sort(
     (a, b) =>
       new Date(b.publish_date).getTime() - new Date(a.publish_date).getTime()
   );
+};
+
+export const getAllVideoProjectsFlattened = (): VideoProject[] => {
+  return getAllVideoProjects();
 };
 
 // Helper function to get projects by category sorted by date (latest first)

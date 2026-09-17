@@ -1,7 +1,7 @@
 "use client";
 
 import type { ReactNode } from "react";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 
 interface GlassmorphismCardProps {
   children: ReactNode;
@@ -15,34 +15,32 @@ export default function GlassmorphismCard({
   hover = true,
 }: GlassmorphismCardProps) {
   return (
-    <motion.div
+    <m.div
       className={`
         relative overflow-hidden
-        bg-white/[0.03] 
-        backdrop-blur-2xl
-        border border-white/10
-        rounded-[24px] 
-        shadow-[0_8px_30px_rgb(0,0,0,0.12)]
+        glass-card
         ${className}
       `}
       whileHover={hover ? {
-        y: -8,
-        backgroundColor: "rgba(255, 255, 255, 0.05)",
-        borderColor: "rgba(255, 255, 255, 0.2)",
-        boxShadow: "0 20px 40px rgba(0,0,0,0.4)"
+        y: -6,
+        scale: 1.01,
       } : {}}
+      whileTap={{ scale: 0.98 }}
       transition={{
-        duration: 0.4,
-        ease: [0.25, 0.8, 0.25, 1]
+        duration: 0.5,
+        ease: [0.25, 1, 0.5, 1] // Custom refined spring-like ease
       }}
     >
       {/* Inner subtle noise/highlight overlay for texture */}
-      <div className="absolute inset-0 pointer-events-none opacity-[0.03] bg-gradient-to-br from-white to-transparent mix-blend-overlay" />
+      <div className="absolute inset-0 pointer-events-none opacity-[0.04] bg-gradient-to-br from-white via-white/50 to-transparent mix-blend-overlay" />
+
+      {/* Edge Reflection */}
+      <div className="absolute inset-0 rounded-[inherit] pointer-events-none ring-1 ring-inset ring-white/10" />
 
       {/* Content Container */}
-      <div className="relative z-10">
+      <div className="relative z-10 h-full w-full">
         {children}
       </div>
-    </motion.div>
+    </m.div>
   );
 }

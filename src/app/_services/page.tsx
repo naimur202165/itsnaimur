@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import GlassmorphismCard from "@/components/glassmorphism-card";
 import {
@@ -150,7 +150,7 @@ export default function ServicesPage() {
     <div className="min-h-screen py-20 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Hero Section */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -163,17 +163,17 @@ export default function ServicesPage() {
             From concept to completion, I offer comprehensive video editing and
             motion graphics services to bring your vision to life.
           </p>
-        </motion.div>
+        </m.div>
 
         {/* Services Grid */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
           className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20"
         >
           {services.map((service, index) => (
-            <motion.div
+            <m.div
               key={service.title}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -199,12 +199,12 @@ export default function ServicesPage() {
                   </ul>
                 </div>
               </GlassmorphismCard>
-            </motion.div>
+            </m.div>
           ))}
-        </motion.div>
+        </m.div>
 
         {/* Pricing Packages */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
@@ -221,7 +221,7 @@ export default function ServicesPage() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {packages.map((pkg, index) => (
-              <motion.div
+              <m.div
                 key={pkg.name}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -267,13 +267,13 @@ export default function ServicesPage() {
                     <a href="/contact">Get Started</a>
                   </Button>
                 </GlassmorphismCard>
-              </motion.div>
+              </m.div>
             ))}
           </div>
-        </motion.div>
+        </m.div>
 
         {/* Process Section */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.8 }}
@@ -320,10 +320,10 @@ export default function ServicesPage() {
               ))}
             </div>
           </GlassmorphismCard>
-        </motion.div>
+        </m.div>
 
         {/* CTA Section */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 1.0 }}
@@ -344,7 +344,7 @@ export default function ServicesPage() {
               </a>
             </Button>
           </GlassmorphismCard>
-        </motion.div>
+        </m.div>
       </div>
     </div>
   );

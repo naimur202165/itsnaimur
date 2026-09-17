@@ -3,27 +3,27 @@ import { Client } from "@/types/videos";
 export const clientsData: Client[] = [
   {
     id: "stack-learner",
-    name: ".",
+    name: "Stack Learner",
     logo: "/companies/sl-logo.png",
   },
   {
     id: "edu-bridge-academy",
-    name: ".",
+    name: "Edu Bridge Academy",
     logo: "/companies/edu-bridge-academy.jpg",
   },
   {
     id: "eco-revolution",
-    name: ".",
+    name: "EcoRevolution",
     logo: "/companies/eco-revolution.jpg",
   },
   {
     id: "growthleo",
-    name: ".",
+    name: "GrowthLeo LLC",
     logo: "/companies/growthleo.png",
   },
   {
     id: "impel-it",
-    name: "",
+    name: "Impel IT",
     logo: "/companies/impel-it.png",
   },
   {

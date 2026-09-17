@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import GlassmorphismCard from "@/components/glassmorphism-card";
 import {
@@ -40,24 +40,29 @@ export default function SkillsPage() {
     <div className="min-h-screen py-20 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Hero Section */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-16"
+          transition={{ duration: 0.8, ease: [0.25, 1, 0.5, 1] }}
+          className="text-center mb-24 relative"
         >
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-white">
-            My Skills & Expertise
+          {/* Spotlight Effect behind title */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-blue-500/15 blur-[100px] rounded-full pointer-events-none" />
+
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mt-0 md:mt-16 mb-6 text-white tracking-tight relative z-10">
+            <span className="bg-gradient-to-r from-white via-blue-100 to-gray-400 bg-clip-text text-transparent">
+              My Skills & Expertise
+            </span>
           </h1>
-          <p className="text-gray-300 text-base md:text-lg max-w-3xl mx-auto">
+          <p className="text-gray-400 text-lg md:text-xl max-w-3xl mx-auto font-light leading-relaxed relative z-10">
             With years of experience in video editing and motion graphics, I
             bring technical expertise and creative vision to every project.
             Here's what I can do for you.
           </p>
-        </motion.div>
+        </m.div>
 
         {/* Technical Skills */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
@@ -68,7 +73,7 @@ export default function SkillsPage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {videoEditingSkills.map((skill, index) => (
-              <motion.div
+              <m.div
                 key={skill.name}
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -92,13 +97,13 @@ export default function SkillsPage() {
                     {skill.description}
                   </p>
                 </GlassmorphismCard>
-              </motion.div>
+              </m.div>
             ))}
           </div>
-        </motion.div>
+        </m.div>
 
         {/* Specializations */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
@@ -109,7 +114,7 @@ export default function SkillsPage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {specializations.map((spec, index) => (
-              <motion.div
+              <m.div
                 key={spec.title}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -135,13 +140,13 @@ export default function SkillsPage() {
                     ))}
                   </div>
                 </GlassmorphismCard>
-              </motion.div>
+              </m.div>
             ))}
           </div>
-        </motion.div>
+        </m.div>
 
         {/* Achievements */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.8 }}
@@ -152,7 +157,7 @@ export default function SkillsPage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {achievements.map((achievement, index) => (
-              <motion.div
+              <m.div
                 key={achievement.title}
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -170,13 +175,13 @@ export default function SkillsPage() {
                     {achievement.description}
                   </p>
                 </GlassmorphismCard>
-              </motion.div>
+              </m.div>
             ))}
           </div>
-        </motion.div>
+        </m.div>
 
         {/* Workflow */}
-        {/* <motion.div
+        {/* <m.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 1.2 }}
@@ -187,7 +192,7 @@ export default function SkillsPage() {
           </h2>
           <div className="space-y-6">
             {workflow.map((step, index) => (
-              <motion.div
+              <m.div
                 key={step.step}
                 initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -206,12 +211,12 @@ export default function SkillsPage() {
                     </div>
                   </div>
                 </GlassmorphismCard>
-              </motion.div>
+              </m.div>
             ))}
           </div>
-        </motion.div> */}
+        </m.div> */}
 
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 1.2 }}
@@ -254,7 +259,7 @@ export default function SkillsPage() {
               />
             </VerticalTimeline>
           </GlassmorphismCard>
-        </motion.div>
+        </m.div>
 
         {/* CTA Section */}
         <CTASection

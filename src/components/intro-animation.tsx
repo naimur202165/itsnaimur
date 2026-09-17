@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { m, AnimatePresence  } from "framer-motion";
 
 export default function IntroAnimation() {
   const [showIntro, setShowIntro] = useState(false);
@@ -27,14 +27,14 @@ export default function IntroAnimation() {
   return (
     <AnimatePresence>
       {showIntro && (
-        <motion.div
+        <m.div
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 1 }}
           className="fixed inset-0 z-50 flex items-center justify-center bg-black"
         >
           <div className="text-center">
-            <motion.div
+            <m.div
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
@@ -57,8 +57,8 @@ export default function IntroAnimation() {
                   </svg>
                 </div>
               </div>
-            </motion.div>
-            <motion.h1
+            </m.div>
+            <m.h1
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.5 }}
@@ -67,17 +67,17 @@ export default function IntroAnimation() {
               <span className="bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
                 itsNiloy
               </span>
-            </motion.h1>
-            <motion.p
+            </m.h1>
+            <m.p
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.8 }}
               className="mt-2 text-gray-400"
             >
               Professional Video Editing
-            </motion.p>
+            </m.p>
           </div>
-        </motion.div>
+        </m.div>
       )}
     </AnimatePresence>
   );

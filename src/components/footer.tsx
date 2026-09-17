@@ -1,14 +1,14 @@
 "use client";
 
+import Link from "next/link";
 import {
-  Heart,
-  Instagram,
   Linkedin,
-  Mail,
   Twitter,
   Youtube,
+  Mail,
+  Heart,
+  Instagram,
 } from "lucide-react";
-import Link from "next/link";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -16,17 +16,17 @@ export default function Footer() {
   const socialLinks = [
     {
       name: "YouTube",
-      href: "https://www.youtube.com/@naimurmotion",
+      href: "https://www.youtube.com/@itsniloybhowmick",
       icon: Youtube,
     },
     {
       name: "Instagram",
-      href: "https://www.instagram.com/naimurvisuals/?hl=en",
+      href: "https://instagram.com/its.niloybhowmick",
       icon: Instagram,
     },
     {
       name: "LinkedIn",
-      href: "https://www.linkedin.com/in/naimur202164/",
+      href: "https://www.linkedin.com/in/niloy-bhowmick",
       icon: Linkedin,
     },
     {
@@ -36,7 +36,7 @@ export default function Footer() {
     },
     {
       name: "Email",
-      href: "mailto:contact.naimur202164@gmail.com",
+      href: "mailto:contact.niloybhowmick@gmail.com",
       icon: Mail,
     },
   ];
@@ -48,7 +48,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="space-y-6">
             <h3 className="text-2xl font-bold tracking-tight bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
-              Naimur Rahman
+              Niloy Bhowmick
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
               Video Editor and Motion Graphics Designer passionate about
@@ -108,10 +108,7 @@ export default function Footer() {
                     aria-label={link.name}
                   >
                     <div className="p-3 rounded-full bg-white/5 border border-white/10 group-hover:bg-blue-600/20 group-hover:border-blue-500/50 transition-all duration-300">
-                      <Icon
-                        size={20}
-                        className="text-gray-400 group-hover:text-blue-400 transition-colors"
-                      />
+                      <Icon size={20} className="text-gray-400 group-hover:text-blue-400 transition-colors" />
                     </div>
                   </a>
                 );
@@ -122,15 +119,14 @@ export default function Footer() {
 
         <div className="border-t border-white/5 mt-16 pt-8 text-center">
           <p className="text-gray-500 text-sm flex items-center justify-center gap-1.5">
-            Made with{" "}
-            <Heart className="text-red-500 fill-red-500/20" size={14} /> by{" "}
+            Made with <Heart className="text-red-500 fill-red-500/20" size={14} /> by{" "}
             <a
-              href="https://www.linkedin.com/in/naimur202164//"
+              href="https://www.linkedin.com/in/mdmarufsarker/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors underline decoration-dotted underline-offset-4"
             >
-              Md. Naimur Rahman
+              Md. Maruf Sarker
             </a>{" "}
             © {currentYear}
           </p>
