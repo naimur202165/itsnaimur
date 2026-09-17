@@ -40,9 +40,9 @@ export const metadata: Metadata = {
     "Lower Thirds",
     "Audio Sync",
   ],
-  authors: [{ name: "Niloy Bhowmick", url: "https://www.itsniloy.me" }],
-  creator: "Niloy Bhowmick",
-  publisher: "Niloy Bhowmick",
+  authors: [{ name: "Naimur Rahman", url: "https://www.itsnaimur.me" }],
+  creator: "Naimur Rahman",
+  publisher: "Naimur Rahman",
   robots: {
     index: true,
     follow: true,
