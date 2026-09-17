@@ -200,7 +200,7 @@ export default function AboutPage() {
             className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background py-10"
             style={{ maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)', WebkitMaskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)' }}
           >
-            <Marquee className="[--duration:20s]">
+            {/* <Marquee className="[--duration:20s]">
               {clientsData.map((client) => (
                 <div key={client.id} className="mx-8 flex flex-col items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 opacity-50 hover:opacity-100 cursor-pointer">
                   <div className="relative w-20 h-20 rounded-2xl overflow-hidden bg-white/5 p-4 flex items-center justify-center shadow-sm hover:shadow-md hover:bg-white/10 transition-all">
@@ -216,7 +216,7 @@ export default function AboutPage() {
                   </p>
                 </div>
               ))}
-            </Marquee>
+            </Marquee> */}
           </div>
         </m.div>
 
