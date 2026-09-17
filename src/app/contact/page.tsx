@@ -99,7 +99,7 @@ export default function ContactPage() {
                       href="mailto:contact.niloybhowmick@gmail.com"
                       className="text-white hover:text-blue-400 transition-colors"
                     >
-                      contact.niloybhowmick@gmail.com
+                      contact.naimur202164@gmail.com
                     </a>
                   </div>
                 </div>
@@ -111,12 +111,12 @@ export default function ContactPage() {
                   <div>
                     <p className="text-gray-400 text-sm">WhatsApp</p>
                     <a
-                      href="https://wa.me/+8801580385556"
+                      href="https://wa.me/+8801778470061"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-white hover:text-green-400 transition-colors"
                     >
-                      +88 (015) 803-85556
+                      +88 (017) 784-70061
                     </a>
                   </div>
                 </div>
@@ -310,7 +310,7 @@ export default function ContactPage() {
                 <p className="text-gray-400 text-sm text-center">
                   Prefer to chat directly? Reach out on{" "}
                   <a
-                    href="https://wa.me/+8801580385556"
+                    href="https://wa.me/+8801778470061"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-green-400 hover:text-green-300"
