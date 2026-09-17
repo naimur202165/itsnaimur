@@ -2,7 +2,7 @@ export const categories = [
   "All",
   "Talking Head",
   "Shorts",
-  "UGC",
+  "UGC Shorts",
   "AI Faceless",
   "Documentary",
   "Motion Graphics",
