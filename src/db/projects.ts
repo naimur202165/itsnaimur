@@ -188,6 +188,22 @@ export const allVideoProjects: VideoProject[] = [
     duration: "3:50min",
     software_used: ["Premiere Pro", "After Effects"],
   },
+  {
+    id: "KX7wa-GeeWI",
+    video_title: "Suitcase Carry Kettlebell single hand",
+    video_description: "The suitcase carry involves holding a kettlebell by your side and walking while engaging your core, like you would if you were carrying a suitcase, hence the name. Add it to your total-body workout to boost your overall strength",
+    tags: ["Short Form", "Social Media", "Dynamic", "Viral"],
+    cover_image: "KX7wa-GeeWI",
+    publish_date: "2026-09-4",
+    client_name: "Liftzip",
+    client_image: "",
+    client_feedback: "",
+    video_link: "https://www.youtube.com/watch?v=KX7wa-GeeWI",
+    project_images: [],
+    category: ["AI Faceless",],
+    duration: "4:00min",
+    software_used: ["Premiere Pro", "After Effects"],
+  },
 //  AI FACELESS 
 
 ];
