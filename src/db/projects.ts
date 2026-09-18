@@ -172,6 +172,22 @@ export const allVideoProjects: VideoProject[] = [
     duration: "6:09min",
     software_used: ["Premiere Pro", "After Effects"],
   },
+   {
+    id: "819cpmFgUio",
+    video_title: "Turkish get off kettlebell",
+    video_description: "The kettlebell Turkish get-up is a total-body functional movement that transitions you from lying flat on the floor to standing completely upright while holding a weight overhead.",
+    tags: ["Short Form", "Social Media", "Dynamic", "Viral"],
+    cover_image: "819cpmFgUio",
+    publish_date: "2026-08-28",
+    client_name: "Liftzip",
+    client_image: "",
+    client_feedback: "",
+    video_link: "https://www.youtube.com/watch?v=819cpmFgUio",
+    project_images: [],
+    category: ["AI Faceless",],
+    duration: "3:50min",
+    software_used: ["Premiere Pro", "After Effects"],
+  },
 //  AI FACELESS 
 
 ];
