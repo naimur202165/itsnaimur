@@ -9,84 +9,54 @@ export const allVideoProjects: VideoProject[] = [
     cover_image: "CGGeIBsuWWU",
     publish_date: "2025-11-27",
     client_name: "Naimur rahman",
-    client_image: "/companies/naimurrahman.png",
+    client_image: "/companies/growthleo.png",
+
     client_feedback: "",
     video_link: "https://youtu.be/CGGeIBsuWWU?si=CGGeIBsuWWU",
     project_images: [],
-    category: ["Talking Head","ALL",'Explainer'] ,
+    category: ["Talking Head", "ALL", 'Explainer'],
     duration: "23sec",
     software_used: ["Premiere Pro", "After Effects"],
   },
   {
     id: "S1gb7ugYJO4",
     video_title: "Are you looking for a video editor?",
-    video_description:
-      "This video is created for a client who was looking for a video editor. I have edited this video for them and they were satisfied with my work.",
-    tags: ["Video Editing", "Client Work", "Portfolio"],
+    video_description: `This video is created for a client who was looking for a video editor. I have edited this video for them and they were satisfied with my work.`,
+    tags: ["Mental Health", "Brain Training", "Transformation", "Wellness"],
     cover_image: "S1gb7ugYJO4",
-    publish_date: "2025-10-12",
-    client_name: "Naimur rahman",
-    client_image: "/profile/naimurrahman.png",
+    publish_date: "2026-09-18",
+    client_name: "Growthleo",
+    client_image: "/companies/growthleo.png",
     client_feedback: "",
     video_link: "https://www.youtube.com/watch?v=S1gb7ugYJO4",
     project_images: [],
-    category: ["Talking Head", "Explainer",'ALL'],
-    duration: "10:12",
-    software_used: ["Davinci Resolve", "After Effects"],
-  },
-  // Shorts
-    {
-    id: "0tFIJvIlsAY",
-    video_title: "What is your mindset",
-    video_description:
-      "Your mindset is the set of beliefs, assumptions, and attitudes that shape how you perceive the world, process experiences, and respond to challenges. It acts as a mental lens, dictating how you interpret failure, handle stress, and approach personal growth—ultimately determining",
-    tags: ["Video Editing", "Client Work", "Portfolio"],
-    cover_image: "0tFIJvIlsAY",
-    publish_date: "2026-09-18",
-    client_name: "Naimur rahman",
-    client_image: "/profile/naimurrahman.png",
-    client_feedback: "",
-    video_link: "https://www.youtube.com/shorts/0tFIJvIlsAY",
-    project_images: [],
-    category: ["Shorts",'ALL'],
-    duration: "10:12",
+    category: ["Talking Head", "Explainer"],
+    duration: "4:59",
     software_used: ["Premiere Pro", "After Effects"],
   },
-  // Shorts
-  // {
-  //   id: "0tFIJvIlsAY",
-  //   video_title: "What is your mindset",
-  //   video_description:
-  //     "Your mindset is the set of beliefs, assumptions, and attitudes that shape how you perceive the world, process experiences, and respond to challenges. It acts as a mental lens, dictating how you interpret failure, handle stress, and approach personal growth—ultimately determining",
-  //   tags: ["Video Editing", "Client Work", "Portfolio"],
-  //   cover_image: "0tFIJvIlsAY",
-  //   publish_date: "2026-09-18",
-  //   client_name: "Naimur rahman",
-  //   client_image: "/profile/naimurrahman.png",
-  //   client_feedback: "",
-  //   video_link: "https://www.youtube.com/shorts/0tFIJvIlsAY",
-  //   project_images: [],
-  //   category: ["Shorts",'ALL'],
-  //   duration: "47:12",
-  //   software_used: ["Premiere Pro", "After Effects"],
-  // },
-  //  {
-  //   id: "7FECfBBUKzE",
-  //   video_title: "The cyber security mindset",
-  //   video_description:
-  //     "A cybersecurity mindset is a continuous state of vigilance, critical thinking, and proactive risk awareness regarding digital environments. Rather than viewing security as a one-time setup, it treats digital safety as an ongoing process rooted in core habits:",
-  //   tags: ["Video Editing", "Client Work", "Portfolio"],
-  //   cover_image: "7FECfBBUKzE",
-  //   publish_date: "2026-09-18",
-  //   client_name: "Naimur rahman",
-  //   client_image: "/profile/naimurrahman.png",
-  //   client_feedback: "",
-  //   video_link: "https://www.youtube.com/shorts/7FECfBBUKzE",
-  //   project_images: [],
-  //   category: ["Shorts",'ALL'],
-  //   duration: "1:18",
-  //   software_used: ["Premiere Pro", "After Effects"],
-  // },
- 
+
+// Shorts
+
+
+  {
+    id: "7FECfBBUKzE",
+    video_title: "The cyber security",
+    video_description: "Cybersecurity is the practice of protecting computers, networks, programs, and data from digital attacks, damage, or unauthorized access",
+    tags: ["Short Form", "Social Media", "Dynamic", "Viral"],
+    cover_image: "7FECfBBUKzE",
+    publish_date: "2026-09-18",
+    client_name: "Growthleo",
+    client_image: "/companies/growthleo.png",
+    client_feedback: "",
+    video_link: "https://www.youtube.com/shorts/7FECfBBUKzE",
+    project_images: [],
+    category: ["Talking Head", "Explainer"],
+    duration: "4:59",
+    software_used: ["Premiere Pro", "After Effects"],
+  },
+
+
+
 ];
+
 
