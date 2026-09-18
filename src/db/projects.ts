@@ -155,22 +155,7 @@ export const allVideoProjects: VideoProject[] = [
     duration: "8:49min",
     software_used: ["Premiere Pro", "After Effects"],
   },
-  {
-    id: "MnoDI1sdodA",
-    video_title: "Farmers walk kettlebell",
-    video_description: "A kettlebell farmer walk is a simple, powerful full-body exercise where you hold a heavy kettlebell in each hand and walk forward. It builds massive grip strength, locks in your core, and fixes your posture while also improving your cardiovascular fitness. It’s a great exercise for building strength, endurance, and stability.",
-    tags: ["Short Form", "Social Media", "Dynamic", "Viral"],
-    cover_image: "MnoDI1sdodA",
-    publish_date: "2026-07-28",
-    client_name: "Liftzip",
-    client_image: "",
-    client_feedback: "",
-    video_link: "https://www.youtube.com/watch?v=MnoDI1sdodA",
-    project_images: [],
-    category: ["AI Faceless",],
-    duration: "8:49min",
-    software_used: ["Premiere Pro", "After Effects"],
-  },
+ 
    {
     id: "5BnxuQ4LU50",
     video_title: "These 5 Kettlebell Exercises",
