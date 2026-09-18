@@ -1,57 +1,10 @@
 "use client";
 
 import { m } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import GlassmorphismCard from "@/components/glassmorphism-card";
-import { Mail, MapPin, Clock, Send, MessageCircle } from "lucide-react";
-import { toast } from "sonner"
+import { Mail, MapPin, Clock, MessageCircle, ArrowUpRight } from "lucide-react";
 
 export default function ContactPage() {
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
-    const form = e.currentTarget;
-    const formData = new FormData(form);
-
-    const name = formData.get("name") as string;
-    const email = formData.get("email") as string;
-    const message = formData.get("message") as string;
-    const projectType = formData.get("project-type") as string;
-    const timeline = formData.get("timeline") as string;
-    const honeypot = formData.get("honeypot") as string;
-
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    if (!emailRegex.test(email)) {
-      toast("Please enter a valid email address.")
-      return;
-    }
-
-    if (!message || message.length < 30) {
-      toast("Message should be at least 30 characters long.");
-      return;
-    }
-
-    const res = await fetch("/api/send-email", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ name, email, message, projectType, timeline, honeypot }),
-    });
-
-    const result = await res.json();
-
-    if (res.ok) {
-      toast("Message sent successfully!");
-      form.reset();
-    } else {
-      toast(result.error || "Something went wrong.");
-    }
-  };
-
   return (
     <div className="min-h-screen py-20 px-4">
       <div className="max-w-6xl mx-auto">
@@ -96,10 +49,12 @@ export default function ContactPage() {
                   <div>
                     <p className="text-gray-400 text-sm">Email</p>
                     <a
-                      href="mailto:contact.niloybhowmick@gmail.com"
+                      href="https://mail.google.com/mail/?view=cm&fs=1&to=naimur202164@gmail.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-white hover:text-blue-400 transition-colors"
                     >
-                      contact.naimur202164@gmail.com
+                      naimur202164@gmail.com
                     </a>
                   </div>
                 </div>
@@ -183,143 +138,23 @@ export default function ContactPage() {
             </GlassmorphismCard>
           </m.div>
 
-          {/* Contact Form */}
+          {/* Direct Contact */}
           <m.div
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
             <GlassmorphismCard className="p-8">
-              <h3 className="text-2xl font-semibold mb-6 text-white">
-                Send Message
+              <h3 className="text-2xl font-semibold mb-3 text-white">
+                Let&apos;s Work Together
               </h3>
-              <form className="space-y-6" onSubmit={handleSubmit}>
-                {/* Honeypot field (hidden for spam prevention) */}
-                <div className="hidden" aria-hidden="true">
-                  <input
-                    id="honeypot"
-                    name="honeypot"
-                    type="text"
-                    tabIndex={-1}
-                    autoComplete="off"
-                  />
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div>
-                    <label
-                      htmlFor="name"
-                      className="text-sm text-gray-400 mb-2 block font-medium"
-                    >
-                      Name *
-                    </label>
-                    <Input
-                      id="name"
-                      name="name"
-                      type="text"
-                      required
-                      className="bg-white/[0.03] border-white/10 text-white placeholder:text-gray-500 rounded-xl focus-visible:ring-blue-500/30 focus-visible:border-blue-500/50 h-12"
-                      placeholder="Your name"
-                    />
-                  </div>
-                  <div>
-                    <label
-                      htmlFor="email"
-                      className="text-sm text-gray-400 mb-2 block font-medium"
-                    >
-                      Email *
-                    </label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      required
-                      className="bg-white/[0.03] border-white/10 text-white placeholder:text-gray-500 rounded-xl focus-visible:ring-blue-500/30 focus-visible:border-blue-500/50 h-12"
-                      placeholder="you@example.com"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="project-type"
-                    className="text-sm text-gray-400 mb-2 block font-medium"
-                  >
-                    Project Type
-                  </label>
-                  <select
-                    id="project-type"
-                    name="project-type"
-                    className="w-full bg-white/[0.03] border border-white/10 text-white rounded-xl px-4 py-3 h-12 appearance-none focus:outline-none focus:ring-2 focus:ring-blue-500/30 focus:border-blue-500/50 transition-all custom-select"
-                  >
-                    <option value="" className="bg-gray-900 text-gray-400">Select project type</option>
-                    <option value="youtube" className="bg-gray-900">YouTube Video</option>
-                    <option value="social-media" className="bg-gray-900">Social Media Content</option>
-                    <option value="promo" className="bg-gray-900">Promotional Video</option>
-                    <option value="tutorial" className="bg-gray-900">Tutorial/Course</option>
-                    <option value="documentary" className="bg-gray-900">Documentary</option>
-                    <option value="animation" className="bg-gray-900">Logo Animation</option>
-                    <option value="other" className="bg-gray-900">Other</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="timeline"
-                    className="text-sm text-gray-400 mb-2 block font-medium"
-                  >
-                    Timeline
-                  </label>
-                  <Input
-                    id="timeline"
-                    name="timeline"
-                    type="text"
-                    className="bg-white/[0.03] border-white/10 text-white placeholder:text-gray-500 rounded-xl focus-visible:ring-blue-500/30 focus-visible:border-blue-500/50 h-12"
-                    placeholder="e.g., 1 week, ASAP"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="message"
-                    className="text-sm text-gray-400 mb-2 block font-medium"
-                  >
-                    Project Details *
-                  </label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    required
-                    rows={6}
-                    placeholder="Tell me about your project..."
-                    className="bg-white/[0.03] border-white/10 text-white placeholder:text-gray-500 rounded-xl focus-visible:ring-blue-500/30 focus-visible:border-blue-500/50 resize-none p-4"
-                  />
-                </div>
-
-                <Button
-                  type="submit"
-                  size="lg"
-                  className="w-full bg-white text-black hover:bg-gray-200 rounded-full h-14 text-base font-semibold shadow-[0_0_30px_rgba(255,255,255,0.2)] hover:shadow-[0_0_40px_rgba(255,255,255,0.4)] transition-all hover:scale-105 cursor-pointer mt-4"
-                >
-                  <Send className="mr-2" size={18} />
-                  Send Message
-                </Button>
-              </form>
-
-              <div className="mt-6 pt-6 border-t border-gray-700">
-                <p className="text-gray-400 text-sm text-center">
-                  Prefer to chat directly? Reach out on{" "}
-                  <a
-                    href="https://wa.me/+8801778470061"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-green-400 hover:text-green-300"
-                  >
-                    WhatsApp
-                  </a>{" "}
-                  for instant communication.
-                </p>
-              </div>
+              <p className="text-gray-400 leading-relaxed mb-8">
+                Tell me about your project directly on WhatsApp. I&apos;ll get back to you as soon as possible.
+              </p>
+              <a href="https://wa.me/+8801778470061" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between w-full rounded-2xl bg-green-600 px-5 py-4 text-white font-semibold hover:bg-green-500 transition-colors">
+                <span className="flex items-center gap-3"><MessageCircle size={22} /> Start a WhatsApp Chat</span>
+                <ArrowUpRight size={20} />
+              </a>
             </GlassmorphismCard>
           </m.div>
         </div>
