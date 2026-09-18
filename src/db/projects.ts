@@ -137,7 +137,7 @@ export const allVideoProjects: VideoProject[] = [
     project_images: [],
     category: ["AI Faceless",],
     duration: "7:45min",
-    software_used: ["Premiere Pro", "After Effects"],
+    software_used: ["Premiere Pro", ],
   },
   {
     id: "MnoDI1sdodA",
@@ -153,7 +153,7 @@ export const allVideoProjects: VideoProject[] = [
     project_images: [],
     category: ["AI Faceless",],
     duration: "8:49min",
-    software_used: ["Premiere Pro", "After Effects"],
+    software_used: ["Premiere Pro", ],
   },
  
    {
@@ -170,7 +170,7 @@ export const allVideoProjects: VideoProject[] = [
     project_images: [],
     category: ["AI Faceless",],
     duration: "6:09min",
-    software_used: ["Premiere Pro", "After Effects"],
+    software_used: ["Premiere Pro", ],
   },
    {
     id: "819cpmFgUio",
@@ -186,7 +186,7 @@ export const allVideoProjects: VideoProject[] = [
     project_images: [],
     category: ["AI Faceless",],
     duration: "3:50min",
-    software_used: ["Premiere Pro", "After Effects"],
+    software_used: ["Premiere Pro", ],
   },
   {
     id: "KX7wa-GeeWI",
@@ -202,7 +202,23 @@ export const allVideoProjects: VideoProject[] = [
     project_images: [],
     category: ["AI Faceless",],
     duration: "4:00min",
-    software_used: ["Premiere Pro", "After Effects"],
+    software_used: ["Premiere Pro", ],
+  },
+  {
+    id: "kIjK3_5EXqw",
+    video_title: "If Burpees Hurt Your Knees, Try This",
+    video_description: "If burpees hurt your knees, stop doing the explosive jumps. Instead, step your feet in and out instead of hopping, avoid landing on your toes, keep your feet wide outside your hands,",
+    tags: ["Short Form", "Social Media", "Dynamic", "Viral"],
+    cover_image: "kIjK3_5EXqw",
+    publish_date: "2026-09-17",
+    client_name: "Liftzip",
+    client_image: "",
+    client_feedback: "",
+    video_link: "https://www.youtube.com/watch?v=kIjK3_5EXqw",
+    project_images: [],
+    category: ["AI Faceless",],
+    duration: "8:26min",
+    software_used: ["Premiere Pro", ],
   },
 //  AI FACELESS 
 
