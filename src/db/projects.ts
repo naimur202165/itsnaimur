@@ -26,7 +26,7 @@ export const allVideoProjects: VideoProject[] = [
     cover_image: "S1gb7ugYJO4",
     publish_date: "2026-09-18",
     client_name: "Growthleo",
-    client_image: "/companies/growthleo.png",
+    client_image: "",
     client_feedback: "",
     video_link: "https://www.youtube.com/watch?v=S1gb7ugYJO4",
     project_images: [],
@@ -46,7 +46,7 @@ export const allVideoProjects: VideoProject[] = [
     cover_image: "7FECfBBUKzE",
     publish_date: "2026-09-18",
     client_name: "Growthleo",
-    client_image: "/companies/growthleo.png",
+    client_image: "",
     client_feedback: "",
     video_link: "https://www.youtube.com/shorts/7FECfBBUKzE",
     project_images: [],
@@ -62,7 +62,7 @@ export const allVideoProjects: VideoProject[] = [
     cover_image: "b1dqIz6Rnm4 ",
     publish_date: "2026-09-18",
     client_name: "Growthleo",
-    client_image: "/companies/growthleo.png",
+    client_image: "",
     client_feedback: "",
     video_link: "https://www.youtube.com/shorts/b1dqIz6Rnm4",
     project_images: [],
@@ -78,7 +78,7 @@ export const allVideoProjects: VideoProject[] = [
     cover_image: "0tFIJvIlsAY ",
     publish_date: "2026-09-18",
     client_name: "Growthleo",
-    client_image: "/companies/growthleo.png",
+    client_image: "",
     client_feedback: "",
     video_link: "https://www.youtube.com/shorts/0tFIJvIlsAY",
     project_images: [],
@@ -86,9 +86,43 @@ export const allVideoProjects: VideoProject[] = [
     duration: "40:00sec",
     software_used: ["Premiere Pro", "After Effects"],
   },
+// UGC Shorts
+   {
+    id: "FtTNACGa890",
+    video_title: "Before i was Finance Angel",
+    video_description: "Finance is the study and management of how people, businesses, and governments make, spend, save, and borrow money. It helps people build secure futures and allows companies to grow",
+    tags: ["Short Form", "Social Media", "Dynamic", "Viral"],
+    cover_image: "FtTNACGa890 ",
+    publish_date: "2026-09-18",
+    client_name: "Maria",
+    client_image: "",
+    client_feedback: "",
+    video_link: "https://www.youtube.com/shorts/FtTNACGa890",
+    project_images: [],
+    category: ["Shorts",'UGC Shorts'],
+    duration: "42:00sec",
+    software_used: ["Premiere Pro", "After Effects"],
+  },
+  {
+    id: "-Y1pqDx50LM",
+    video_title: "You are already successfull",
+    video_description: "Real success is an inner state of peace and growth. You reach success when you stop chasing what others want and start valuing your own daily progress",
+    tags: ["Short Form", "Social Media", "Dynamic", "Viral"],
+    cover_image: "-Y1pqDx50LM ",
+    publish_date: "2026-09-18",
+    client_name: "Maria",
+    client_image: "",
+    client_feedback: "",
+    video_link: "https://www.youtube.com/shorts/-Y1pqDx50LM",
+    project_images: [],
+    category: ["Shorts",'UGC Shorts'],
+    duration: "43:00sec",
+    software_used: ["Premiere Pro", "After Effects"],
+  },
 
+// UGC Shorts
 
-
+ 
 
 ];
 
