@@ -18,6 +18,24 @@ export const allVideoProjects: VideoProject[] = [
     duration: "23sec",
     software_used: ["Premiere Pro", "After Effects"],
   },
+
+    {
+    id: "PLSuDWDZA1CFKQFFhb4ik6pvm5G2EB5gI3",
+    video_title: "Day 03 of learning After Effects",
+    video_description: `This video is created when i was heartbroken and i was trying to learn After Effects. I hope you will like it.`,
+    tags: ["LoveFAANG Career", "Heartbreak", " Emotional",],
+    cover_image: "PLSuDWDZA1CFKQFFhb4ik6pvm5G2EB5gI3",
+    publish_date: "2025-12-27",
+    client_name: "Naimur rahman",
+    client_image: "/companies/growthleo.png",
+
+    client_feedback: "",
+    video_link: "https://www.youtube.com/watch?v=NUo-krPG8qM&list=PLSuDWDZA1CFKQFFhb4ik6pvm5G2EB5gI3",
+    project_images: [],
+    category: ["Talking Head", "ALL", 'Explainer'],
+    duration: "23sec",
+    software_used: ["Premiere Pro", "After Effects"],
+  },
   // {
   //   id: "S1gb7ugYJO4",
   //   video_title: "Are you looking for a video editor?",
