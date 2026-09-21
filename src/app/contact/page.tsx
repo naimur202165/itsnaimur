@@ -2,7 +2,17 @@
 
 import { m } from "framer-motion";
 import GlassmorphismCard from "@/components/glassmorphism-card";
-import { Mail, MapPin, Clock, MessageCircle, ArrowUpRight } from "lucide-react";
+import {
+  Mail,
+  MapPin,
+  Clock,
+  MessageCircle,
+  ArrowUpRight,
+  Linkedin,
+  Instagram,
+  Music2,
+  Youtube,
+} from "lucide-react";
 
 export default function ContactPage() {
   return (
@@ -136,6 +146,7 @@ export default function ContactPage() {
                 </div>
               </div>
             </GlassmorphismCard>
+
           </m.div>
 
           {/* Direct Contact */}
@@ -155,6 +166,46 @@ export default function ContactPage() {
                 <span className="flex items-center gap-3"><MessageCircle size={22} /> Start a WhatsApp Chat</span>
                 <ArrowUpRight size={20} />
               </a>
+            </GlassmorphismCard>
+
+            <GlassmorphismCard className="p-8 mt-8">
+              <h3 className="text-2xl font-semibold mb-6 text-white">
+                Find Me Online
+              </h3>
+              <div className="grid grid-cols-2 gap-3">
+                <a
+                  href="https://www.linkedin.com/in/naimur202164/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 rounded-xl bg-blue-600/20 px-4 py-3 text-white transition-colors hover:bg-blue-600/40"
+                >
+                  <Linkedin size={20} /> LinkedIn
+                </a>
+                <a
+                  href="https://www.tiktok.com/@naimur202164"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 rounded-xl bg-pink-600/20 px-4 py-3 text-white transition-colors hover:bg-pink-600/40"
+                >
+                  <Music2 size={20} /> TikTok
+                </a>
+                <a
+                  href="https://www.youtube.com/channel/UCcBIyuW6S7_xyhsRr_bLc2A/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 rounded-xl bg-red-600/20 px-4 py-3 text-white transition-colors hover:bg-red-600/40"
+                >
+                  <Youtube size={20} /> YouTube
+                </a>
+                <a
+                  href="https://www.instagram.com/naimur202170/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 rounded-xl bg-purple-600/20 px-4 py-3 text-white transition-colors hover:bg-purple-600/40"
+                >
+                  <Instagram size={20} /> Instagram
+                </a>
+              </div>
             </GlassmorphismCard>
           </m.div>
         </div>
