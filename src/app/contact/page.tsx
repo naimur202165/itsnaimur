@@ -168,7 +168,7 @@ export default function ContactPage() {
               </a>
             </GlassmorphismCard>
 
-            <GlassmorphismCard className="p-8 mt-8">
+            <GlassmorphismCard className="p-8 mt-6">
               <h3 className="text-2xl font-semibold mb-6 text-white">
                 Find Me Online
               </h3>
@@ -206,6 +206,23 @@ export default function ContactPage() {
                   <Instagram size={20} /> Instagram
                 </a>
               </div>
+            </GlassmorphismCard>
+
+            <GlassmorphismCard className="p-8 mt-6">
+              <h3 className="text-2xl font-semibold mb-6 text-white">
+                My Educational Channel
+              </h3>
+              <a
+                href="https://www.youtube.com/@naimuracademy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between rounded-xl bg-red-600/20 px-4 py-3 text-white transition-colors hover:bg-red-600/40"
+              >
+                <span className="flex items-center gap-3">
+                  <Youtube size={22} /> Watch Educational Videos
+                </span>
+                <ArrowUpRight size={20} />
+              </a>
             </GlassmorphismCard>
           </m.div>
         </div>
