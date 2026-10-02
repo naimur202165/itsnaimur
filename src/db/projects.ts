@@ -137,7 +137,22 @@ export const allVideoProjects: VideoProject[] = [
     duration: "43:00sec",
     software_used: ["Premiere Pro", "After Effects"],
   },
-
+ {
+    id: "suuTEv6LjTk",
+    video_title: "Beyond the Chair",
+    video_description: "Shifting your focus from trading time for money as a service provider (like a beauty or salon professional) to building scalable wealth through systems, leverage, and ownership is a game-changer. It allows you to create multiple income streams, invest in assets that appreciate over time, and ultimately achieve financial freedom. By leveraging your skills and resources, you can build a business that works for you, rather than being tied to a single source of income.",
+    tags: ["Short Form", "Social Media", "Dynamic", "Viral"],
+    cover_image: "suuTEv6LjTk",
+    publish_date: "2026-10-03",
+    client_name: "Maria",
+    client_image: "",
+    client_feedback: "",
+    video_link: "https://www.youtube.com/shorts/suuTEv6LjTk",
+    project_images: [],
+    category: ["Shorts",'UGC Shorts'],
+    duration: "56:00sec",
+    software_used: ["Premiere Pro", "After Effects"],
+  },
 // UGC Shorts
 
 //  AI FACELESS 
@@ -238,7 +253,62 @@ export const allVideoProjects: VideoProject[] = [
     duration: "8:26min",
     software_used: ["Premiere Pro", ],
   },
+  // New 02-10-2026
+  
+   {
+    id: "-1FeC_KIQwk",
+    video_title: "kettlebell swings",
+    video_description: "AI OverviewKettlebell swings are a high-intensity, low-impact exercise that builds explosive power in your hips, strengthens your posterior chain, and improves cardiovascular fitness.",
+    tags: ["Short Form", "Social Media", "Dynamic", "Viral"],
+    cover_image: "-1FeC_KIQwk",
+    publish_date: "2026-09-28",
+    client_name: "Liftzip",
+    client_image: "",
+    client_feedback: "",
+    video_link: "https://www.youtube.com/watch?v=-1FeC_KIQwk",
+    project_images: [],
+    category: ["AI Faceless",],
+    duration: "8:04min",
+    software_used: ["Premiere Pro", ],
+  },
+   {
+    id: "-XH8XB15_8",
+    video_title: "If you are 40 years old",
+    video_description: "Kettlebell swings are a low-impact, full-body power exercise that builds posterior chain strength, burns calories, and protects joints for people over 40",
+    tags: ["Short Form", "Social Media", "Dynamic", "Viral"],
+    cover_image: "_-XH8XB15_8",
+    publish_date: "2026-10-02",
+    client_name: "Liftzip",
+    client_image: "",
+    client_feedback: "",
+    video_link: "https://www.youtube.com/watch?v=_-XH8XB15_8",
+    project_images: [],
+    category: ["AI Faceless",],
+    duration: "6:44min",
+    software_used: ["Premiere Pro", ],
+  },
 //  AI FACELESS 
+
+// Explainer
+
+ {
+    id: "8uxI6iIFyMw",
+    video_title: "Drone Attack",
+    video_description: " drone is an unmanned aerial vehicle or flying robot controlled remotely or flying autonomously through software-controlled flight plans in their embedded systems, working in conjunction with onboard sensors and GPS.",
+    tags: ["Short Form", "Social Media", "Dynamic", "Viral"],
+    cover_image: "8uxI6iIFyMw",
+    publish_date: "2026-10-01",
+    client_name: "",
+    client_image: "",
+    client_feedback: "",
+    video_link: "https://www.youtube.com/watch?v=8uxI6iIFyMw",
+    project_images: [],
+    category: ["Explainer",],
+    duration: "1:06min",
+    software_used: ["Premiere Pro", ],
+  },
+
+// Explainer
 
 ];
 
