@@ -273,8 +273,8 @@ export const allVideoProjects: VideoProject[] = [
   },
    {
     id: "-XH8XB15_8",
-    video_title: "If you are 40 years old",
-    video_description: "Kettlebell swings are a low-impact, full-body power exercise that builds posterior chain strength, burns calories, and protects joints for people over 40",
+    video_title: "Your Muscles Got Stronger After 40. Your Tendons Didn't.",
+    video_description: "Your muscles and your tendons don't get stronger at the same speed. Muscle adapts fast. Tendons adapt slower — and if nothing in your training accounts for that gap, it's usually the tendon that ends up sore, clicking, or aching every time you push hard again.",
     tags: ["Short Form", "Social Media", "Dynamic", "Viral"],
     cover_image: "_-XH8XB15_8",
     publish_date: "2026-10-02",
